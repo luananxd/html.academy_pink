@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Pink</title>
   </head>
-  <body>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__center">
+        <a class="page-header__logo--mobile" href="#">
+          <img src="img/page-header/page-header__logo--mobile.svg" width="74" height="23" alt="Логотип Pink">
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle">
+            <p class="visually-hidden">Открыть меню</p>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <h1 class="visually-hidden">О приложении Pink</h1>
+      <section class="download">
+        <div class="download__position">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <strong class="download__lead">Взгляните на жизнь иначе!</strong>
+          <div class="download__wrapper">
+            <a class="download__link button" href="#">
+              Скачать приложение
+            </a>
+            <ul class="download__list platform">
+              <li class="platform__item">
+                <a clas="platform__link" href="#">
+                  <img class="platform__logo--apple" src="img/page-content/download/platform__logo--apple.svg" width="47" height="56" alt="Логотип Apple.">
+                </a>
+              </li>
+              <li class="platform__item">
+                <a clas="platform__link" href="#">
+                  <img class="platform__logo--android" src="img/page-content/download/platform__logo--android.svg" width="43" height="47" alt="Логотип Android.">
+                </a>
+              </li>
+              <li class="platform__item">
+                <a clas="platform__link" href="#">
+                  <img class="platform__logo--microsoft" src="img/page-content/download/platform__logo--microsoft.svg" width="44" height="41" alt="Логотип Microsoft.">
+                </a>
+              </li>
+            </ul>
+            <p class="platform__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__center">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="advantages__lead">
+            Устали от серости мегаполиса? Нам есть, что вам <br>предложить!
+          </p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__image-wrapper">
+                <img src="img/page-content/advantages/advantages__image--1.png" width="186" height="382" alt="Унылое изображение на экране телефона.">
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__image-wrapper">
+                <img src="img/page-content/advantages/advantages__image--2.png" width="186" height="382" alt="Изображение с розовым фильтром на экране телефона.">
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__image-wrapper">
+                <img src="img/page-content/advantages/advantages__image--3.png" width="186" height="382" alt="Смайлик на фоне розового изображения на экране телефона.">
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3 class="advantages__title">Заводите новых друзей</h3>
+                <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых!</p>
+              </div>
+            </li>
+          </ul>
+          <div class="advanages__image--big">
+            <img src="img/page-content/advantages/advantages__image--3.png">
+          </div>
+        </div>
+      </section>
+      <section class="research">
+        <div class="research__center">
+          <h2 class="visually-hidden">Научные исследования</h2>
+          <strong class="research__lead">Эффект на 24 часа</strong>
+          <p class="research_text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    </main>
   </body>
 </html>
