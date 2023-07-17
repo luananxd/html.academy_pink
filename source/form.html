@@ -12,7 +12,7 @@
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle">
-            <p class="visually-hidden">Открыть меню</p>
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -40,26 +40,24 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero__title lead">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </section>
-      <section class="form">
+      <div class="form__wrapper">
+        <h1 class="page-body__title lead">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="form__subtitle">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
-        <form class="form__body" action="https://echo.htmlacademy.ru/" method="post" name="contest-form" autocomplete="on">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post" name="contest-form" autocomplete="on">
           <fieldset class="form__group form__group--private">
             <legend class="visually-hidden">Личные данные</legend>
             <label class="form-group__label form-group__label--private">
-              <p class="form-group__text">Фамилия:</p>
+              <span class="form-group__text">Фамилия:</span>
               <input class="form-group__input--private" type="text" name="last-name" placeholder="Укажите фамилию*" required>
             </label>
             <label class="form-group__label form-group__label--private">
-              <p class="form-group__text">Имя:</p>
+              <span class="form-group__text">Имя:</span>
               <input class="form-group__input--private" type="text" name="first-name" placeholder="Введите ваше имя*" required>
             </label>
             <label class="form-group__label form-group__label--private">
-              <p class="form-group__text">Отчество:</p>
+              <span class="form-group__text">Отчество:</span>
               <input class="form-group__input--private" type="text" name="surname" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
@@ -67,53 +65,53 @@
             <legend class="form-group__title">С каким приложением путешествовали?</legend>
             <label class="form-group__label form-group__label--app">
               <input class="form-group__input--app" type="radio" name="app" value="iOS">
-              <p class="form-group__text--pick">Pink для iOS</p>
+              <span class="form-group__text--pick">Pink для iOS</span>
             </label>
             <label class="form-group__label form-group__label--app">
               <input class="form-group__input--app" type="radio" name="app" value="Android">
-              <p class="form-group__text--pick">Pink на Android</p>
+              <span class="form-group__text--pick">Pink на Android</span>
             </label>
             <label class="form-group__label form-group__label--app">
               <input class="form-group__input--app" type="radio" name="app" value="Windows Phone">
-              <p class="form-group__text--pick">Windows Phone</p>
+              <span class="form-group__text--pick">Windows Phone</span>
             </label>
           </fieldset>
           <fieldset class="form__group form__group--contacts">
             <legend class="form-group__title">Контактная информация</legend>
             <label class="form-group__label form-group__label--contacts">
-              <p class="form-group__text">Номер телефона:</p>
+              <span class="form-group__text">Номер телефона:</span>
               <input class="form-group__input--contacts" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </label>
             <label class="form-group__label form-group__label--contacts">
-              <p class="form-group__text">Адрес почты:</p>
-              <input class="form-group__input--contacts" type="mail" name="email" placeholder="Введите почту*" required>
+              <span class="form-group__text">Адрес почты:</span>
+              <input class="form-group__input--contacts" type="email" name="email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
           <fieldset class="form__group form__group--achievements">
             <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="shark" checked>
-              <p class="form-group__text--pick">Сделал селфи с акулой</p>
+              <span class="form-group__text--pick">Сделал селфи с акулой</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="beach" checked>
-              <p class="form-group__text--pick">Обгорел на пляже</p>
+              <span class="form-group__text--pick">Обгорел на пляже</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="chuck">
-              <p class="form-group__text--pick">Видел Чака Норриса</p>
+              <span class="form-group__text--pick">Видел Чака Норриса</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="souvenir">
-              <p class="form-group__text--pick">Накупил сувениров</p>
+              <span class="form-group__text--pick">Накупил сувениров</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="tower" checked>
-              <p class="form-group__text--pick">Удержал башню</p>
+              <span class="form-group__text--pick">Удержал башню</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
               <input class="form-group__input--achievements" type="checkbox" name="hotel">
-              <p class="form-group__text--pick">Разгромил отель</p>
+              <span class="form-group__text--pick">Разгромил отель</span>
             </label>
           </fieldset>
           <fieldset class="form__group form__group--emotion">
@@ -125,7 +123,7 @@
             <p class="form__description"><span class="form__accent">*</span> - обязательные для заполнения поля</p>
           </div>
         </form>
-      </section>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
