@@ -7,7 +7,7 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__center">
-        <a class="page-header__logo--mobile" href="#">
+        <a class="page-header__logo page-header__logo--mobile" href="#">
           <img src="img/page-header/page-header__logo--mobile.svg" width="74" height="23" alt="Логотип Pink">
         </a>
         <nav class="page-header__nav main-nav">
@@ -39,84 +39,88 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="form__wrapper">
-        <h1 class="page-body__title lead">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="form__subtitle">
+    <main class="page-content">
+      <h1 class="page-content__title lead">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-content__wrapper">
+        <p class="page-content__subtitle">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post" name="contest-form" autocomplete="on">
-          <fieldset class="form__group form__group--private">
+          <fieldset class="form-group form-group--private">
             <legend class="visually-hidden">Личные данные</legend>
             <label class="form-group__label form-group__label--private">
               <span class="form-group__text">Фамилия:</span>
-              <input class="form-group__input--private" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+              <input class="form-group__input-private" type="text" name="last-name" placeholder="Укажите фамилию*" required>
             </label>
             <label class="form-group__label form-group__label--private">
               <span class="form-group__text">Имя:</span>
-              <input class="form-group__input--private" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+              <input class="form-group__input-private" type="text" name="first-name" placeholder="Введите ваше имя*" required>
             </label>
             <label class="form-group__label form-group__label--private">
               <span class="form-group__text">Отчество:</span>
-              <input class="form-group__input--private" type="text" name="surname" placeholder="Ну и отчество тоже">
+              <input class="form-group__input-private" type="text" name="surname" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="form__group form__group--app">
+
+          <fieldset class="form-group form-group--app">
             <legend class="form-group__title">С каким приложением путешествовали?</legend>
-            <label class="form-group__label form-group__label--app">
-              <input class="form-group__input--app" type="radio" name="app" value="iOS">
-              <span class="form-group__text--pick">Pink для iOS</span>
+            <label class="form-group__label-app">
+              <input class="form-group__input-app" type="radio" name="app" value="iOS">
+              <span class="form-group__text form-group__text--pick">Pink для iOS</span>
             </label>
             <label class="form-group__label form-group__label--app">
-              <input class="form-group__input--app" type="radio" name="app" value="Android">
-              <span class="form-group__text--pick">Pink на Android</span>
+              <input class="form-group__input-app" type="radio" name="app" value="Android">
+              <span class="form-group__text form-group__text--pick">Pink на Android</span>
             </label>
             <label class="form-group__label form-group__label--app">
-              <input class="form-group__input--app" type="radio" name="app" value="Windows Phone">
-              <span class="form-group__text--pick">Windows Phone</span>
+              <input class="form-group__input-app" type="radio" name="app" value="Windows Phone">
+              <span class="form-group__text form-group__text--pick">Windows Phone</span>
             </label>
           </fieldset>
-          <fieldset class="form__group form__group--contacts">
+
+          <fieldset class="form-group form-group--contacts">
             <legend class="form-group__title">Контактная информация</legend>
             <label class="form-group__label form-group__label--contacts">
               <span class="form-group__text">Номер телефона:</span>
-              <input class="form-group__input--contacts" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="form-group__input-contacts" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </label>
             <label class="form-group__label form-group__label--contacts">
               <span class="form-group__text">Адрес почты:</span>
-              <input class="form-group__input--contacts" type="email" name="email" placeholder="Введите почту*" required>
+              <input class="form-group__input-contacts" type="email" name="email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
-          <fieldset class="form__group form__group--achievements">
+
+          <fieldset class="form-group form-group--achievements">
             <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="shark" checked>
-              <span class="form-group__text--pick">Сделал селфи с акулой</span>
+              <input class="form-group__input-achievements" type="checkbox" name="shark" checked>
+              <span class="form-group__text form-group__text--pick">Сделал селфи с акулой</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="beach" checked>
-              <span class="form-group__text--pick">Обгорел на пляже</span>
+              <input class="form-group__input-achievements" type="checkbox" name="beach" checked>
+              <span class="form-group__text form-group__text--pick">Обгорел на пляже</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="chuck">
-              <span class="form-group__text--pick">Видел Чака Норриса</span>
+              <input class="form-group__input-achievements" type="checkbox" name="chuck">
+              <span class="form-group__text form-group__text--pick">Видел Чака Норриса</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="souvenir">
-              <span class="form-group__text--pick">Накупил сувениров</span>
+              <input class="form-group__input-achievements" type="checkbox" name="souvenir">
+              <span class="form-group__text form-group__text--pick">Накупил сувениров</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="tower" checked>
-              <span class="form-group__text--pick">Удержал башню</span>
+              <input class="form-group__input-achievements" type="checkbox" name="tower" checked>
+              <span class="form-group__text form-group__text--pick">Удержал башню</span>
             </label>
             <label class="form-group__label form-group__label--achievements">
-              <input class="form-group__input--achievements" type="checkbox" name="hotel">
-              <span class="form-group__text--pick">Разгромил отель</span>
+              <input class="form-group__input-achievements" type="checkbox" name="hotel">
+              <span class="form-group__text form-group__text--pick">Разгромил отель</span>
             </label>
           </fieldset>
-          <fieldset class="form__group form__group--emotion">
+
+          <fieldset class="form-group form-group--emotion">
             <legend class="form-group__title">Опишите свои эмоции</legend>
-            <textarea class="from-group__textarea" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form-group__textarea" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="form__wrapper">
             <button class="form__button button" type="submit">Отправить форму</button>
@@ -133,19 +137,19 @@
         <li class="social__item">
           <a class="social__link" href="#">
           <p class="visually-hidden">Twitter</p>
-          <img class="social__logo--twitter" src="img/page-footer/social/social__logo--twitter.svg" width="18" height="14" alt="Логотип Twitter.">
+          <img class="social__logo social__logo--twitter" src="img/page-footer/social/social__logo--twitter.svg" width="18" height="14" alt="Логотип Twitter.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
           <p class="visually-hidden">Facebook</p>
-          <img class="social__logo--facebook" src="img/page-footer/social/social__logo--facebook.svg" width="9" height="18" alt="Логотип Facebook.">
+          <img class="social__logo social__logo--facebook" src="img/page-footer/social/social__logo--facebook.svg" width="9" height="18" alt="Логотип Facebook.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
           <p class="visually-hidden">YouTube</p>
-          <img class="social__logo--twitter" src="img/page-footer/social/social__logo--youtube.svg" width="15" height="13" alt="Логотип YouTube.">
+          <img class="social__logo social__logo--youtube" src="img/page-footer/social/social__logo--youtube.svg" width="15" height="13" alt="Логотип YouTube.">
           </a>
         </li>
       </ul>
