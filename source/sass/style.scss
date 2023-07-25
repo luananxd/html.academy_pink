@@ -12,6 +12,7 @@
 @import "index/reviews.scss";
 @import "index/prices.scss";
 @import "index/table.scss";
+@import "index/contacts.scss";
 
 // catalog.html
 
@@ -79,4 +80,5 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 120%;
+  text-align: center;
 }

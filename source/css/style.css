@@ -163,6 +163,31 @@
   display: none;
 }
 
+.contacts {
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
+.contacts__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__link {
+  display: block;
+  color: #D22856;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__map {
+  display: block;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
@@ -221,5 +246,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 120%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+.contacts {
+  background-color: $white;
+  color: $dark-blue-desaturarion;
+}
+
+.contacts__title {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__link {
+  display: block;
+  color: $pink;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__map {
+  display: block;
+}
