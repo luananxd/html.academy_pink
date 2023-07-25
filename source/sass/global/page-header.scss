@@ -1,0 +1,41 @@
+.page-header {
+  background-color: $black-header;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+// Логотип
+
+.page-header__logo {
+  color: $white;
+  text-decoration: none;
+}
+
+.page-header__logo-img--tablet,
+.page-header__logo-img--desktop {
+  display: none;
+}
+
+// Кнопка меню
+
+.page-header__toggle {
+  background-color: none;
+  border: none;
+}
+
+.page-header__toggle {
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  border-radius: 1px;
+}
+
+// Навигация
+
+.page-header__link {
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
