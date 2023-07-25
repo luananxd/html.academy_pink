@@ -1,0 +1,23 @@
+.advantages {
+  background-color: $white;
+  color: $dark-blue-desaturarion;
+}
+
+.advantages__image {
+  display: none;
+}
+
+.advantages__image--big {
+  display: block;
+}
+
+.advantages__title {
+  color: $black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__text {
+  text-align: center;
+}
+
