@@ -51,6 +51,44 @@
   text-align: center;
 }
 
+.advantages {
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
+.advantages__image {
+  display: none;
+}
+
+.advantages__image--big {
+  display: block;
+}
+
+.advantages__title {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages__text {
+  text-align: center;
+}
+
+.research {
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
+.research__lead {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.research__link {
+  color: #D22856;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
@@ -102,6 +140,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   color: #FFFFFF;
   font-size: 14px;
+  line-height: 24px;
 }
 
 .lead {
