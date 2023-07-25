@@ -118,6 +118,51 @@
   display: none;
 }
 
+.prices {
+  background-color: #F2F2F2;
+  color: #283645;
+}
+
+.table {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table__header {
+  background-color: #283645;
+  color: #FFFFFF;
+}
+
+.table__title {
+  border: 2px solid #E5E5E5;
+  border-top: none;
+  border-bottom: none;
+}
+
+.table__tariff-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.table__price {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.table__item {
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid #E5E5E5;
+}
+
+.table__item--option {
+  display: none;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
