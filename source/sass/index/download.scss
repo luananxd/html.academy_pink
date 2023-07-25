@@ -1,0 +1,20 @@
+
+
+// Блок с платформами, где доступно приложение
+
+.platform {
+  background-color: $dark-grey;
+}
+
+.download__link {
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.platform__description {
+  text-align: center;
+}

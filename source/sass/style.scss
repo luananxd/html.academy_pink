@@ -5,6 +5,7 @@
 
 // index.html
 
+@import "index/download.scss";
 
 // catalog.html
 
@@ -64,6 +65,7 @@
   background-color: $dark-blue;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $white;
+  font-size: 14px;
 }
 
 .lead {

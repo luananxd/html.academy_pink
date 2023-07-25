@@ -34,6 +34,23 @@
   text-decoration: none;
 }
 
+.platform {
+  background-color: #1D2631;
+}
+
+.download__link {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.platform__description {
+  text-align: center;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
@@ -84,6 +101,7 @@
   background-color: #1E394C;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #FFFFFF;
+  font-size: 14px;
 }
 
 .lead {
