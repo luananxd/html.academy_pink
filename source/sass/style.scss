@@ -2,6 +2,7 @@
 
 @import "global/color.scss";
 @import "global/page-header.scss";
+@import "global/page-footer.scss";
 @import "global/slider.scss";
 
 // index.html
@@ -70,6 +71,10 @@
   margin: 0;
   padding: 0;
   background-color: $dark-blue;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  background-position: top center;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $white;
   font-size: 14px;

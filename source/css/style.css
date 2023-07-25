@@ -34,6 +34,11 @@
   text-decoration: none;
 }
 
+.page-footer {
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
 .slider__card:not(:first-child) {
   display: none;
 }
@@ -236,6 +241,10 @@
   margin: 0;
   padding: 0;
   background-color: #1E394C;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  background-position: top center;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #FFFFFF;
   font-size: 14px;
