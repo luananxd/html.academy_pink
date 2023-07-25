@@ -34,6 +34,14 @@
   text-decoration: none;
 }
 
+.slider__card:not(:first-child) {
+  display: none;
+}
+
+.slider__toggles--desktop {
+  display: none;
+}
+
 .platform {
   background-color: #1D2631;
 }
@@ -87,6 +95,27 @@
 
 .research__link {
   color: #D22856;
+}
+
+.reviews {
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
+.reviews__text {
+  text-align: center;
+}
+
+.reviews__author {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__about-author {
+  display: none;
 }
 
 @font-face {

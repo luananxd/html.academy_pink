@@ -1,0 +1,22 @@
+.reviews {
+  background-color: $white;
+  color: $dark-blue-desaturarion;
+}
+
+.reviews__text {
+  text-align: center;
+}
+
+.reviews__author {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__about-author {
+  display: none;
+}
+
+
