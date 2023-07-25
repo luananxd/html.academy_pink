@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Pink</title>
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <div class="page-header__center">
+    <header class="page-header page-geader--open">
+      <nav class="page-header__nav main-nav">
         <a class="page-header__logo page-header__logo--mobile" href="#">
           <img src="img/page-header/page-header__logo--mobile.svg" width="74" height="23" alt="Логотип Pink">
         </a>
-        <nav class="page-header__nav main-nav">
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-content">
       <h1 class="visually-hidden">О приложении Pink</h1>
@@ -45,39 +44,42 @@
         <div class="download__center">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <strong class="download__lead lead">Взгляните на жизнь иначе!</strong>
-          <div class="download__bg-box">
-            <a class="download__link button" href="#">
-              Скачать приложение
-            </a>
-            <ul class="download__list platform">
-              <li class="platform__item">
-                <a class="platform__link" href="#">
-                  <img class="platform__logo platform__logo--apple" src="img/page-content/download/platform__logo--apple.svg" width="47" height="56" alt="Логотип Apple.">
-                </a>
-              </li>
-              <li class="platform__item">
-                <a class="platform__link" href="#">
-                  <img class="platform__logo platform__logo--android" src="img/page-content/download/platform__logo--android.svg" width="43" height="47" alt="Логотип Android.">
-                </a>
-              </li>
-              <li class="platform__item">
-                <a class="platform__link" href="#">
-                  <img class="platform__logo platform__logo--microsoft" src="img/page-content/download/platform__logo--microsoft.svg" width="44" height="41" alt="Логотип Microsoft.">
-                </a>
-              </li>
-            </ul>
-            <p class="download__description">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+          <div class="platform">
+            <div class="platform__center">
+              <a class="download__link button" href="#">
+                Скачать приложение
+              </a>
+              <ul class="platform__list">
+                <li class="platform__item">
+                  <a class="platform__link" href="#">
+                    <img class="platform__logo platform__logo--apple" src="img/page-content/download/platform__logo--apple.svg" width="47" height="56" alt="Логотип Apple.">
+                  </a>
+                </li>
+                <li class="platform__item">
+                  <a class="platform__link" href="#">
+                    <img class="platform__logo platform__logo--android" src="img/page-content/download/platform__logo--android.svg" width="43" height="47" alt="Логотип Android.">
+                  </a>
+                </li>
+                <li class="platform__item">
+                  <a class="platform__link" href="#">
+                    <img class="platform__logo platform__logo--microsoft" src="img/page-content/download/platform__logo--microsoft.svg" width="44" height="41" alt="Логотип Microsoft.">
+                  </a>
+                </li>
+              </ul>
+              <p class="platform__description">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages__lead-box">
+          <p class="advantages__lead lead">Устали от серости мегаполиса?</p>
+          <p class="advantages__lead lead">Нам есть что вам предложить!</p>
+        </div>
         <div class="advantages__center">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__lead">
-            Устали от серости мегаполиса? Нам есть, что вам <br>предложить!
-          </p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
@@ -115,42 +117,42 @@
       <section class="research">
         <div class="research__center">
           <h2 class="visually-hidden">Научные исследования</h2>
-          <strong class="research__lead">Эффект на 24 часа</strong>
-          <p class="research__text">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+          <div class="research__text">
+            <strong class="research__lead">Эффект на 24 часа</strong>
+            <p class="research__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__center">
-          <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <div class="reviews__list slider">
-            <blockquote class="reviews__item slider__card">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
-              <p class="reviews__author">Николай Петров</p>
-              <p class="reviews__about-author">25 лет, водитель трамвая</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__card">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
-              <p class="reviews__author">Николай Петров</p>
-              <p class="reviews__about-author">25 лет, водитель трамвая</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__card">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
-              <p class="reviews__author">Николай Петров</p>
-              <p class="reviews__about-author">25 лет, водитель трамвая</p>
-            </blockquote>
-            <p class="reviews__toggles slider__toggles slider__toggles--desktop">
-              <button class="slider__toggle" type="button">Предыдущий отзыв</button>
-              <button class="slider__toggle" type="button">Следующий отзыв</button>
-            </p>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">Первый отзыв</button>
-              <button class="slider__toggle" type="button">Второй отзыв</button>
-              <button class="slider__toggle" type="button">Третий отзыв</button>
-            </p>
-          </div>
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__list slider">
+          <blockquote class="reviews__item slider__card">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__about-author">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__card">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__about-author">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__card">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__about-author">25 лет, водитель трамвая</p>
+          </blockquote>
+          <p class="reviews__toggles slider__toggles slider__toggles--desktop">
+            <button class="slider__toggle" type="button">Предыдущий отзыв</button>
+            <button class="slider__toggle" type="button">Следующий отзыв</button>
+          </p>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">Первый отзыв</button>
+            <button class="slider__toggle" type="button">Второй отзыв</button>
+            <button class="slider__toggle" type="button">Третий отзыв</button>
+          </p>
         </div>
       </section>
       <section class="prices">
@@ -159,13 +161,13 @@
           <table class="prices__table table">
             <thead class="table__header">
               <tr class="table__row">
-                <th class="visually-hidden">Опции</th>
-                <th class="table__title">База <span class="table__price">1,99 USD</span></th>
-                <th class="table__title table__title--heat">Стандарт <span class="table__price">1,99 USD</span></th>
-                <th class="table__title">Анлим <span class="table__price">1,99 USD</span></th>
+                <th class="visually-hidden table__item table__item--option">Опции</th>
+                <th class="table__title"><span class="table__tariff-name">База</span><span class="table__price">1,99 USD</span></th>
+                <th class="table__title table__title--heat"><span class="table__tariff-name">Стандарт</span><span class="table__price">1,99 USD</span></th>
+                <th class="table__title"><span class="table__tariff-name">Анлим</span><span class="table__price">1,99 USD</span></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="table__body">
               <tr class="table__row">
                 <td class="table__item table__item--option">Розовый фильтр</td>
                 <td class="table__item"><span class="table__content">Розовый фильтр</span><span class="table__status table__status--on"></span></td>
@@ -187,9 +189,9 @@
             </tbody>
           </table>
           <p class="prices__toggles slider__toggles">
-            <button class="slider__toggle" type="button">Первый отзыв</button>
-            <button class="slider__toggle slider__toggle--current" type="button">Второй отзыв</button>
-            <button class="slider__toggle" type="button">Третий отзыв</button>
+            <button class="slider__toggle" type="button">Тариф База</button>
+            <button class="slider__toggle slider__toggle--current" type="button">Тариф Стандарт</button>
+            <button class="slider__toggle" type="button">Тариф Анлим</button>
           </p>
         </div>
       </section>
@@ -213,7 +215,7 @@
           </div>
         </div>
         <div class="contacts__map-box">
-          <img src="img/page-content/contacts/map.png" width="660" height="374" alt="Карта с отметкой адреса офиса: ул. Большая Конюшенная, 19/8.">
+          <img class="contacts__map" src="img/page-content/contacts/map.png" width="660" height="374" alt="Карта с отметкой адреса офиса: ул. Большая Конюшенная, 19/8.">
         </div>
       </section>
       <footer class="page-footer">
