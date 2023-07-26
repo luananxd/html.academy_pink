@@ -53,17 +53,33 @@
   display: none;
 }
 
+.download {
+  padding-top: 29px;
+}
+
+.download__lead {
+  margin-bottom: 320px;
+}
+
 .platform {
   background-color: #1D2631;
 }
 
-.download__link {
+.platform__button {
+  display: block;
+  padding: 21px;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
+  border: 3px solid #FFFFFF;
+}
+
+.platform__center {
+  padding-top: 28px;
+  padding-bottom: 38px;
 }
 
 .platform__description {
@@ -258,6 +274,7 @@
 }
 
 .lead {
+  display: block;
   font-size: 24px;
   font-weight: 300;
   line-height: 120%;
