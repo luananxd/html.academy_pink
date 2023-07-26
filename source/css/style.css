@@ -41,8 +41,21 @@
 }
 
 .page-footer {
+  padding: 40px 0;
   background-color: #FFFFFF;
   color: #283645;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 41px;
+}
+
+.social {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+  list-style: none;
 }
 
 .slider__card:not(:first-child) {
@@ -121,12 +134,16 @@
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 24px;
   color: #000000;
   font-size: 18px;
   text-align: center;
 }
 
 .advantages__text {
+  margin: 0;
+  margin-bottom: 43px;
   text-align: center;
 }
 

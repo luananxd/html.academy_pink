@@ -1,4 +1,19 @@
 .page-footer {
+  padding: 40px 0;
   background-color: $white;
   color: $dark-blue-desaturarion;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 41px;
+}
+
+// Блок с социальными сетями
+
+.social {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+  list-style: none;
 }
