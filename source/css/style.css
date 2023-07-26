@@ -131,6 +131,8 @@
 }
 
 .research {
+  padding-top: 102px;
+  padding-bottom: 50px;
   background-color: #FFFFFF;
   color: #283645;
 }
@@ -147,7 +149,7 @@
 
 .reviews {
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
   background-color: #FFFFFF;
   color: #283645;
 }
@@ -170,11 +172,14 @@
 }
 
 .prices {
-  background-color: #F2F2F2;
+  padding-top: 129px;
+  padding-bottom: 49px;
+  background-color: #FFFFFF;
   color: #283645;
 }
 
 .table {
+  margin-bottom: 45px;
   background-color: #FFFFFF;
   text-align: center;
   border-collapse: collapse;
@@ -186,6 +191,8 @@
 }
 
 .table__title {
+  padding: 35px;
+  padding-top: 19px;
   border: 2px solid #E5E5E5;
   border-top: none;
   border-bottom: none;
@@ -205,6 +212,9 @@
 }
 
 .table__item {
+  padding: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #E5E5E5;
