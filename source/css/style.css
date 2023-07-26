@@ -319,6 +319,10 @@
   text-transform: uppercase;
 }
 
+.panorama__image {
+  display: block;
+}
+
 .comment {
   padding: 20px 17px;
   background-color: #F2F2F2;
@@ -349,6 +353,20 @@
   color: #D22856;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.gallery {
+  padding-top: 20px;
+  background-color: #FFFFFF;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+}
+
+.photo__image {
+  display: block;
 }
 
 @font-face {
