@@ -146,11 +146,14 @@
 }
 
 .reviews {
+  padding-top: 50px;
+  padding-bottom: 40px;
   background-color: #FFFFFF;
   color: #283645;
 }
 
 .reviews__text {
+  margin-bottom: 44px;
   text-align: center;
 }
 
