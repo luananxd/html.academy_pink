@@ -1,0 +1,86 @@
+.form {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-group__text {
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-group {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  border: none;
+}
+
+.form-group--app,
+.form-group--achievements {
+  background-color: $grey;
+}
+
+.form-group__title {
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-group--contacts .form-group__title {
+  display: none;
+}
+
+.form-group__input-private,
+.form-group__input-contacts {
+  padding: 23px 20px;
+  color: $dark-blue-desaturarion;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $grey-2;
+}
+
+.form-group__input-private::placeholder,
+.form-group__input-contacts::placeholder,
+.form-group__textarea::placeholder {
+  color: $dark-blue-desaturarion;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-group__text--pick {
+  color: $dark-blue-desaturarion;
+  font-size: 18px;
+  text-transform: none;
+}
+
+.form-group__textarea {
+  padding: 22px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $dark-blue-desaturarion;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $grey-2;
+}
+
+.form__description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.form__accent {
+  color: $pink;
+}
+
+.form__button {
+  padding: 23px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $green;
+  border: none;
+}

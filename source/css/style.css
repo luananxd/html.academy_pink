@@ -279,27 +279,26 @@
 }
 
 .hero {
-  padding-top: 80px;
+  padding-top: 36px;
 }
 
 .hero__title {
   margin: 0;
-  margin-bottom: 143px;
-  font-size: 50px;
+  margin-bottom: 84px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
 }
 
 .hero__wrapper {
-  padding-top: 100px;
-  padding-bottom: 85px;
+  padding-top: 50px;
+  padding-bottom: 60px;
   background-color: #FFFFFF;
   color: #283645;
 }
 
 .hero__subtitle {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   text-align: center;
 }
@@ -406,6 +405,115 @@
   opacity: 0.1;
   color: #283645;
   border-color: #283645;
+}
+
+.form-content {
+  padding-top: 36px;
+}
+
+.form-content__title {
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.form-content__wrapper {
+  padding-top: 54px;
+  padding-bottom: 26px;
+  background-color: #FFFFFF;
+  color: #283645;
+}
+
+.form-content__subtitle {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-group__text {
+  color: #D22856;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-group {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  border: none;
+}
+
+.form-group--app,
+.form-group--achievements {
+  background-color: #F2F2F2;
+}
+
+.form-group__title {
+  color: #D22856;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-group--contacts .form-group__title {
+  display: none;
+}
+
+.form-group__input-private,
+.form-group__input-contacts {
+  padding: 23px 20px;
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #E5E5E5;
+}
+
+.form-group__input-private::placeholder,
+.form-group__input-contacts::placeholder,
+.form-group__textarea::placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-group__text--pick {
+  color: #283645;
+  font-size: 18px;
+  text-transform: none;
+}
+
+.form-group__textarea {
+  padding: 22px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #E5E5E5;
+}
+
+.form__description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.form__accent {
+  color: #D22856;
+}
+
+.form__button {
+  padding: 23px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2AAB6D;
+  border: none;
 }
 
 @font-face {
