@@ -225,11 +225,22 @@
 }
 
 .contacts {
+  padding-top: 50px;
   background-color: #FFFFFF;
   color: #283645;
 }
 
+.contacts__lead {
+  margin-bottom: 45px;
+}
+
+.contacts__wrapper {
+  margin-bottom: 41px;
+}
+
 .contacts__title {
+  margin: 0;
+  margin-bottom: 13px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
@@ -238,6 +249,7 @@
 
 .contacts__link {
   display: block;
+  margin-bottom: 31px;
   color: #D22856;
   font-size: 24px;
   font-weight: 300;
