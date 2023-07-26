@@ -26,7 +26,13 @@
   border-radius: 1px;
 }
 
+.page-header__nav {
+  padding: 23px 0;
+}
+
 .page-header__link {
+  display: block;
+  padding: 15px;
   color: #FFFFFF;
   font-weight: 700;
   text-align: center;
