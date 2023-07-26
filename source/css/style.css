@@ -304,6 +304,53 @@
   text-align: center;
 }
 
+.panorama {
+  background-color: #FFFFFF;
+}
+
+.panorama__title {
+  margin: 0;
+  padding: 13px 20px;
+  background-color: #D22856;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.comment {
+  padding: 20px 17px;
+  background-color: #F2F2F2;
+  color: #283645;
+}
+
+.comment__data {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.comment__author {
+  font-weight: 700;
+}
+
+.comment__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.comment__like {
+  color: #D22856;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
