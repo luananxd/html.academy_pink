@@ -1,6 +1,21 @@
 .advantages {
+  padding-top: 46px;
   background-color: $white;
   color: $dark-blue-desaturarion;
+}
+
+.advantages__lead-box {
+  margin-bottom: 123px;
+}
+
+.advantages__lead:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding:0;
+  list-style: none;
 }
 
 .advantages__image {

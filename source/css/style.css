@@ -82,13 +82,34 @@
   padding-bottom: 38px;
 }
 
+.platform__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .platform__description {
   text-align: center;
 }
 
 .advantages {
+  padding-top: 46px;
   background-color: #FFFFFF;
   color: #283645;
+}
+
+.advantages__lead-box {
+  margin-bottom: 123px;
+}
+
+.advantages__lead:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__image {
