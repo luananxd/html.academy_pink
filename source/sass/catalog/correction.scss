@@ -1,0 +1,38 @@
+.correction {
+  padding-top: 49px;
+  background-color: $white;
+  color: $dark-blue-desaturarion;
+}
+
+.correction__title {
+  margin-bottom: 52px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.correction__wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $grey;
+}
+
+.correction__button {
+  display: block;
+  padding: 21px;
+  color: $pink;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: none;
+  border: 3px solid $pink;
+}
+
+.correction__button:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.button--disabled {
+  opacity: 0.1;
+  color: $dark-blue-desaturarion;
+  border-color: $dark-blue-desaturarion;
+}
