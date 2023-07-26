@@ -1,0 +1,25 @@
+.hero {
+  padding-top: 80px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 143px;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+
+.hero__wrapper {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  background-color: $white;
+  color: $dark-blue-desaturarion;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
