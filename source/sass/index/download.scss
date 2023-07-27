@@ -5,36 +5,3 @@
 .download__lead {
   margin-bottom: 320px;
 }
-
-// Блок с платформами, где доступно приложение
-
-.platform {
-  background-color: $dark-grey;
-}
-
-.platform__button {
-  display: block;
-  padding: 21px;
-  color: $white;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: none;
-  border: 3px solid $white;
-}
-
-.platform__center {
-  padding-top: 28px;
-  padding-bottom: 38px;
-}
-
-.platform__list {
-  margin: 0;
-  padding:0;
-  list-style: none;
-}
-
-.platform__description {
-  text-align: center;
-}

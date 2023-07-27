@@ -105,6 +105,37 @@
   text-align: center;
 }
 
+.platform {
+  background-color: #1D2631;
+}
+
+.platform__button {
+  display: block;
+  padding: 21px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #FFFFFF;
+}
+
+.platform__center {
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.platform__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.platform__description {
+  text-align: center;
+}
+
 .advantages {
   padding-top: 46px;
   background-color: #FFFFFF;
@@ -422,9 +453,12 @@
   text-align: center;
 }
 
-.form {
+.form-group {
+  padding-top: 42px;
+  padding-bottom: 44px;
   font-size: 18px;
   line-height: 30px;
+  border: none;
 }
 
 .form-group__text {
@@ -432,12 +466,6 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.form-group {
-  padding-top: 42px;
-  padding-bottom: 44px;
-  border: none;
 }
 
 .form-group--app,
@@ -557,7 +585,7 @@
   margin: 0;
   padding: 0;
   background-color: #1E394C;
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/back--mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 462px;
   background-position: top center;
