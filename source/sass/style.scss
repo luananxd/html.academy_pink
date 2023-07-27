@@ -8,6 +8,7 @@
 // index.html
 
 @import "index/download.scss";
+@import "index/platform.scss";
 @import "index/advantages.scss";
 @import "index/research.scss";
 @import "index/reviews.scss";
@@ -26,7 +27,7 @@
 // form.html
 
 @import "form/form-content.scss";
-@import "form/form.scss";
+@import "form/form-group.scss";
 
 
 @font-face {

@@ -1,6 +1,9 @@
-.form {
+.form-group {
+  padding-top: 42px;
+  padding-bottom: 44px;
   font-size: 18px;
   line-height: 30px;
+  border: none;
 }
 
 .form-group__text {
@@ -8,12 +11,6 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.form-group {
-  padding-top: 42px;
-  padding-bottom: 44px;
-  border: none;
 }
 
 .form-group--app,
