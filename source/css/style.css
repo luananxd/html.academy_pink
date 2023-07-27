@@ -5,7 +5,7 @@
 }
 
 .page-header__logo {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -15,14 +15,15 @@
 }
 
 .page-header__toggle {
-  background-color: none;
+  background-color: transparent;
   border: none;
 }
 
-.page-header__toggle {
+.page-header__toggle-ico {
+  display: block;
   width: 50px;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1px;
 }
 
@@ -33,7 +34,7 @@
 .page-header__link {
   display: block;
   padding: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +43,7 @@
 
 .page-footer {
   padding: 40px 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -75,50 +76,19 @@
 }
 
 .platform {
-  background-color: #1D2631;
+  background-color: #1d2631;
 }
 
 .platform__button {
   display: block;
   padding: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid #FFFFFF;
-}
-
-.platform__center {
-  padding-top: 28px;
-  padding-bottom: 38px;
-}
-
-.platform__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.platform__description {
-  text-align: center;
-}
-
-.platform {
-  background-color: #1D2631;
-}
-
-.platform__button {
-  display: block;
-  padding: 21px;
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: none;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
 }
 
 .platform__center {
@@ -138,7 +108,7 @@
 
 .advantages {
   padding-top: 46px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -181,7 +151,7 @@
 .research {
   padding-top: 102px;
   padding-bottom: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -192,13 +162,13 @@
 }
 
 .research__link {
-  color: #D22856;
+  color: #d22856;
 }
 
 .reviews {
   padding-top: 50px;
   padding-bottom: 14px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -222,26 +192,26 @@
 .prices {
   padding-top: 129px;
   padding-bottom: 49px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
 .table {
   margin-bottom: 45px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   text-align: center;
   border-collapse: collapse;
 }
 
 .table__header {
   background-color: #283645;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .table__title {
   padding: 35px;
   padding-top: 19px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-top: none;
   border-bottom: none;
 }
@@ -265,7 +235,7 @@
   padding-right: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 }
 
 .table__item--option {
@@ -274,7 +244,7 @@
 
 .contacts {
   padding-top: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -298,7 +268,7 @@
 .contacts__link {
   display: block;
   margin-bottom: 31px;
-  color: #D22856;
+  color: #d22856;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -326,7 +296,7 @@
 .hero__wrapper {
   padding-top: 50px;
   padding-bottom: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -337,14 +307,14 @@
 }
 
 .panorama {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .panorama__title {
   margin: 0;
   padding: 13px 20px;
-  background-color: #D22856;
-  color: #FFFFFF;
+  background-color: #d22856;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
@@ -357,7 +327,7 @@
 
 .comment {
   padding: 20px 17px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #283645;
 }
 
@@ -382,14 +352,14 @@
 }
 
 .comment__like {
-  color: #D22856;
+  color: #d22856;
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .gallery {
   padding-top: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .gallery__list {
@@ -403,7 +373,7 @@
 
 .correction {
   padding-top: 49px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -416,18 +386,18 @@
 .correction__wrapper {
   padding-top: 20px;
   padding-bottom: 41px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .correction__button {
   display: block;
   padding: 21px;
-  color: #D22856;
+  color: #d22856;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   background-color: none;
-  border: 3px solid #D22856;
+  border: 3px solid #d22856;
 }
 
 .correction__button:not(:last-child) {
@@ -443,7 +413,7 @@
 .form-content {
   padding-top: 54px;
   padding-bottom: 26px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #283645;
 }
 
@@ -462,7 +432,7 @@
 }
 
 .form-group__text {
-  color: #D22856;
+  color: #d22856;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -470,11 +440,11 @@
 
 .form-group--app,
 .form-group--achievements {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .form-group__title {
-  color: #D22856;
+  color: #d22856;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -490,7 +460,7 @@
   color: #283645;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 }
 
 .form-group__input-private::placeholder,
@@ -513,7 +483,7 @@
   color: #283645;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 }
 
 .form__description {
@@ -522,18 +492,18 @@
 }
 
 .form__accent {
-  color: #D22856;
+  color: #d22856;
 }
 
 .form__button {
   padding: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #2AAB6D;
+  background-color: #2aab6d;
   border: none;
 }
 
@@ -584,13 +554,13 @@
 .page-body {
   margin: 0;
   padding: 0;
-  background-color: #1E394C;
+  background-color: #1e394c;
   background-image: url("../img/back--mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 462px;
   background-position: top center;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   line-height: 24px;
 }
