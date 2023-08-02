@@ -1,10 +1,23 @@
 .platform {
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 31px;
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 300px;
+    background-color: transparent;
+  }
+
 }
 
 .platform__button {
   display: block;
-  padding: 21px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 15px;
+  width: 280px;
   color: $white;
   font-size: 18px;
   font-weight: 700;
@@ -12,19 +25,61 @@
   text-align: center;
   text-decoration: none;
   border: 3px solid $white;
+  border-radius: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    padding: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+
 }
 
 .platform__center {
-  padding-top: 28px;
-  padding-bottom: 38px;
+  margin: 0 auto;
+  width: auto;
+  max-width: $mobile-max;
+
+  @media (min-width: $tablet-width) {
+    max-width: auto;
+  }
 }
 
 .platform__list {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 21px;
   padding: 0;
+  width: 204px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+}
+
+.platform__link {
+  display: block;
+  line-height: 0;
 }
 
 .platform__description {
+  margin: 0 auto;
+  max-width: 280px;
+  font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
 }

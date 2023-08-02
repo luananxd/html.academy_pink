@@ -101,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
+    max-width: $desktop-max;
   }
 
 }

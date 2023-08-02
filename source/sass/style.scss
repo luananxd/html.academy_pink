@@ -83,7 +83,7 @@
   background-color: $dark-blue;
   background-image: url("../img/back--mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100vw auto;
   background-position: top center;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $white;
@@ -92,10 +92,13 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back--tablet.png");
+    background-size: auto 18%;
+    background-size: fill;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back--desktop.png");
+    background-size: auto 20%;
   }
 
 }
@@ -106,4 +109,15 @@
   font-weight: 300;
   line-height: 120%;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: normal;
+  }
+
 }
