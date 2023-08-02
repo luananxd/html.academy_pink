@@ -1,6 +1,6 @@
 // Глобальные стили и блоки
 
-@import "global/color.scss";
+@import "global/variables.scss";
 @import "global/page-header.scss";
 @import "global/page-footer.scss";
 @import "global/slider.scss";
@@ -83,12 +83,21 @@
   background-color: $dark-blue;
   background-image: url("../img/back--mobile.png");
   background-repeat: no-repeat;
-  background-size: 320px 462px;
+  background-size: contain;
   background-position: top center;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $white;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back--tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back--desktop.png");
+  }
+
 }
 
 .lead {
