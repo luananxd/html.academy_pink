@@ -1,7 +1,39 @@
+.slider__card {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-max;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-max;
+  }
+
+}
+
 .slider__card:not(:first-child) {
   display: none;
 }
 
-.slider__toggles--desktop {
-  display: none;
+.slider__toggles {
+  display: block;
+  margin: 0 auto;
+  width: 56px;
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+  }
+
 }
+

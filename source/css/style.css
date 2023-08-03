@@ -149,12 +149,39 @@
   list-style: none;
 }
 
+.slider__card {
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .slider__card {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1100px) {
+  .slider__card {
+    max-width: 940px;
+  }
+}
+
 .slider__card:not(:first-child) {
   display: none;
 }
 
+.slider__toggles {
+  display: block;
+  margin: 0 auto;
+  width: 56px;
+}
 .slider__toggles--desktop {
   display: none;
+}
+@media (min-width: 1100px) {
+  .slider__toggles--desktop {
+    display: block;
+  }
+  .slider__toggles--mobile {
+    display: none;
+  }
 }
 
 .download {
@@ -542,27 +569,100 @@
 }
 
 .reviews {
-  padding-top: 50px;
-  padding-bottom: 14px;
+  position: relative;
+  z-index: 1;
+  padding-top: 41px;
+  padding-bottom: 63px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #ffffff;
   color: #283645;
 }
+@media (min-width: 660px) {
+  .reviews {
+    z-index: 0;
+    padding-top: 79px;
+    padding-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1100px) {
+  .reviews {
+    padding-top: 184px;
+    padding-bottom: 33px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
 
 .reviews__text {
+  order: 2;
+  margin: 0;
   margin-bottom: 44px;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .reviews__text {
+    order: 1;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1100px) {
+  .reviews__text {
+    margin-bottom: 36px;
+  }
+}
 
 .reviews__author {
+  order: 1;
+  margin: 0;
+  margin-bottom: 13px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .reviews__author {
+    order: 2;
+    margin: 0;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1100px) {
+  .reviews__author {
+    order: 2;
+    margin-bottom: 2px;
+    font-size: 24px;
+  }
+}
 
 .reviews__about-author {
   display: none;
+}
+@media (min-width: 660px) {
+  .reviews__about-author {
+    display: block;
+    order: 3;
+    margin: 0;
+    margin-bottom: 39px;
+    color: #283645;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 1100px) {
+  .reviews__about-author {
+    margin: 0;
+    font-size: inherit;
+  }
 }
 
 .prices {
@@ -991,6 +1091,8 @@
 }
 @media (min-width: 1100px) {
   .page-body {
+    font-size: 18px;
+    line-height: 30px;
     background-image: url("../img/back--desktop.png");
     background-size: auto 20%;
   }
