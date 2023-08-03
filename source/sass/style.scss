@@ -89,11 +89,11 @@
   color: $white;
   font-size: 14px;
   line-height: 24px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back--tablet.png");
     background-size: auto 18%;
-    background-size: fill;
   }
 
   @media (min-width: $desktop-width) {
