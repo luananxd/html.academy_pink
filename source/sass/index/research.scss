@@ -1,15 +1,72 @@
 .research {
-  // display: none;
-  padding-top: 102px;
-  padding-bottom: 50px;
-  background-color: $white;
-  color: $dark-blue-desaturarion;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-top: 95px;
+    padding-bottom: 43px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $white;
+    color: $dark-blue-desaturarion;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-top: 111px;
+    padding-bottom: 112px;
+    padding-right: 65px;
+    padding-left: 65px;
+    background-color: $grey;
+  }
+
+}
+
+.research__center {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $tablet-max;
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-max;
+  }
+
+}
+
+.research__wrapper {
+  margin-left: auto;
+  width: 50%;
 }
 
 .research__lead {
+  display: block;
+  margin: 0;
+  margin-bottom: 11px;
+  width: 170px;
   color: $black;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    width: 100%;
+    line-height: 30px;
+  }
+
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+
 }
 
 .research__link {
