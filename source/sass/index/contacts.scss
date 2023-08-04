@@ -1,36 +1,122 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: 44px;
   background-color: $white;
   color: $dark-blue-desaturarion;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .contacts__lead {
-  margin-bottom: 45px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+
 }
 
 .contacts__wrapper {
-  margin-bottom: 41px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 41px;
+    margin-bottom: 23px;
+    padding: 0 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+}
+
+.contacts__item {
+  line-height: normal;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mail {
+      order: 3;
+    }
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 19px;
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 13px;
   color: $black;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
+
 }
 
 .contacts__link {
   display: block;
-  margin-bottom: 31px;
   color: $pink;
   font-size: 24px;
   font-weight: 300;
+  font-style: normal;
   text-align: center;
   text-decoration: none;
 }
 
+.contacts__map-box {
+  position: relative;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
+}
+
+.contacts__map-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 52px;
+  background-image: url("../img/page-content/contacts/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 103px;
+  }
+}
+
 .contacts__map {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
