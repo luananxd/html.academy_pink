@@ -6,8 +6,38 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   color: $dark-blue-desaturarion;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+  padding-bottom: 70px;
+    background-image: url("../img/page-content/price/price-background--tablet.svg");
+    background-size: 1200px 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
+    padding-bottom: 98px;
+    background-image: url("../img/page-content/price/price-background--desktop.svg");
+    background-size: 100vw auto;
+  }
+
 }
 
 .prices__slider {
-  width: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+}
+
+.prices__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,49 +1,128 @@
 .table {
   margin-bottom: 45px;
-  background-color: $white;
+  width: 840px;
   text-align: center;
   border-collapse: collapse;
-}
 
-.table__header {
-  background-color: $dark-blue-desaturarion;
-  color: $white;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+  }
+
 }
 
 .table__title {
-  padding: 35px;
-  padding-top: 19px;
-  width: 280px;
-  max-width: $mobile-max;
+  padding: 12px;
+  padding-bottom: 29px;
+  background-color: $dark-blue-desaturarion;
+  color: $white;
   border: 2px solid $grey-2;
   border-top: none;
   border-bottom: none;
+
+  &--option {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+    padding-bottom: 8px;
+
+    &--option {
+      display: table-cell;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
 }
 
 .table__tariff-name {
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 28px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+
 }
 
 .table__price {
   font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 28px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .table__item {
   padding: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 280px;
-  max-width: $mobile-max;
+  background-color: $white;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: left;
   border: 2px solid $grey-2;
+
+  &--option {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 15px;
+    width: 155px;
+    text-transform: none;
+
+    &--option {
+    display: table-cell;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 16px;
+    width: 235px;
+
+    &--option {
+      padding: 14px 22px;
+    }
+  }
+
 }
 
-.table__item--option {
-  display: none;
+.table__content {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.table__status {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../../img/page-content/table/no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--on {
+    width: 31px;
+    height: 21px;
+    background-image: url("../../img/page-content/table/yes.svg");
+  }
 }
