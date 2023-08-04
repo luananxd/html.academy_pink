@@ -1,6 +1,13 @@
 .prices {
-  padding-top: 129px;
+  padding-top: 127px;
   padding-bottom: 49px;
   background-color: $white;
+  background-image: url("../img/page-content/price/price-background--mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   color: $dark-blue-desaturarion;
+}
+
+.prices__slider {
+  width: 840px;
 }

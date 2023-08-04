@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   padding-top: 41px;
-  padding-bottom: 63px;
+  padding-bottom: 14px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: $white;
@@ -28,6 +28,16 @@
 .reviews__item {
   display: flex;
   flex-direction: column;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+
 }
 
 .reviews__text {

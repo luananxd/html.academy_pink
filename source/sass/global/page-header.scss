@@ -93,15 +93,14 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: auto;
-  max-width: $mobile-max;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-max;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-max;
+    width: 940px;
   }
 
 }
@@ -110,7 +109,7 @@
   display: none;
   margin: 0;
   padding: 0;
-  width: auto;
+  width: 280px;
   list-style: none;
   background-color: $dark-blue-desaturarion;
 
@@ -119,18 +118,17 @@
     position: absolute;
     top: 66px;
     left: 0;
-    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     &--open {
       top: 110px;
+      width: 620px;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 620px;
     background-color: transparent;
   }
 

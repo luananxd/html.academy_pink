@@ -41,10 +41,10 @@
 .platform__center {
   margin: 0 auto;
   width: auto;
-  max-width: $mobile-max;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    max-width: auto;
+    width: auto;
   }
 }
 

@@ -13,6 +13,8 @@
 .table__title {
   padding: 35px;
   padding-top: 19px;
+  width: 280px;
+  max-width: $mobile-max;
   border: 2px solid $grey-2;
   border-top: none;
   border-bottom: none;
@@ -35,6 +37,8 @@
   padding: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 280px;
+  max-width: $mobile-max;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid $grey-2;

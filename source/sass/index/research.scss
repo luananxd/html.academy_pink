@@ -29,17 +29,22 @@
 .research__center {
   margin: 0 auto;
   width: 100%;
-  max-width: $tablet-max;
+  width: 620px;
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-max;
+    width: 940px;
   }
 
 }
 
 .research__wrapper {
   margin-left: auto;
-  width: 50%;
+  width: 310px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+
 }
 
 .research__lead {
