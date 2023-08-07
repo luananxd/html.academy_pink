@@ -1,10 +1,30 @@
 .panorama {
+  position: relative;
   background-color: $white;
+}
+
+.panorama__title-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+
 }
 
 .panorama__title {
   margin: 0;
-  padding: 13px 20px;
+  margin-left: auto;
+  padding: 6px 19px;
+  width: 140px;
   background-color: $pink;
   color: $white;
   font-size: 12px;
@@ -13,6 +33,37 @@
   text-transform: uppercase;
 }
 
+.panorama__image-wrapper {
+  width: 100%;
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 507px;
+  }
+
+}
+
 .panorama__image {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panorama__comment {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 940px;
+  }
+
 }
