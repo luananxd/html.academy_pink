@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .hero__title {
@@ -22,6 +26,11 @@
     font-size: 50px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+    width: 800px;
+  }
+
 }
 
 .hero__wrapper {
@@ -33,6 +42,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 91px;
     padding-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 79px;
   }
 
 }
@@ -47,6 +60,10 @@
   @media (min-width: $tablet-width) {
     width: 460px;
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
   }
 
 }

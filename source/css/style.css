@@ -1050,6 +1050,11 @@
     padding-top: 66px;
   }
 }
+@media (min-width: 1100px) {
+  .hero {
+    padding-top: 59px;
+  }
+}
 
 .hero__title {
   margin: 0 auto;
@@ -1067,6 +1072,12 @@
     font-size: 50px;
   }
 }
+@media (min-width: 1100px) {
+  .hero__title {
+    margin-bottom: 89px;
+    width: 800px;
+  }
+}
 
 .hero__wrapper {
   padding-top: 44px;
@@ -1078,6 +1089,11 @@
   .hero__wrapper {
     padding-top: 91px;
     padding-bottom: 77px;
+  }
+}
+@media (min-width: 1100px) {
+  .hero__wrapper {
+    padding-bottom: 79px;
   }
 }
 
@@ -1092,6 +1108,11 @@
   .hero__subtitle {
     width: 460px;
     font-size: 18px;
+  }
+}
+@media (min-width: 1100px) {
+  .hero__subtitle {
+    width: 600px;
   }
 }
 
