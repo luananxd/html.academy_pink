@@ -2,18 +2,85 @@
   padding: 40px 0;
   background-color: $white;
   color: $dark-blue-desaturarion;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 87px;
+  }
+
+}
+
+.page-footer__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 41px;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 41px;
 }
 
 // Блок с социальными сетями
 
 .social {
+  display: flex;
+  justify-content: space-between;
+  width: 178px;
   margin: 0;
-  margin-bottom: 41px;
   padding: 0;
   list-style: none;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 3px solid $dark-blue-desaturarion-op;
+  border-radius: 50%;
+}
+
+.social__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Разработчик
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  color: $dark-blue-desaturarion;
+  line-height: 18px;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    width: 153px;
+  }
+
 }
