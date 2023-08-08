@@ -1,12 +1,27 @@
 .comment {
-  padding: 20px 17px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 10px;
+  padding-left: 17px;
   background-color: $grey;
   color: $dark-blue-desaturarion;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: auto 1fr 24px;
+    flex-grow: 1;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
 }
 
 .comment__data {
   margin: 0;
-  margin-bottom: 14px;
 }
 
 .comment__author {
@@ -21,7 +36,7 @@
 
 .comment__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 11px;
 }
 
 .comment__like {
