@@ -1,34 +1,142 @@
 .correction {
-  padding-top: 49px;
   background-color: $white;
   color: $dark-blue-desaturarion;
 }
 
 .correction__title {
-  margin-bottom: 52px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+  width: 280px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    width: 450px;
+    font-size: 18px;
+  }
 }
 
 .correction__wrapper {
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-bottom: 57px;
+    padding-right: 60px;
+    padding-left: 80px;
+    width: 940px;
+  }
+}
+
+.correction__center {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    column-gap: 48px;
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 90px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.correction__image-wrapper {
+  margin: 0 auto;
+  margin-bottom: 42px;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.correction__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.correction__settings {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.correction__lines {
+  margin-bottom: 73px;
+}
+
+.correction__line {
+  &--size,
+  &--tint,
+  &--contrast {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--size,
+    &--tint,
+    &--contrast {
+      display: block;
+    }
+
+    &--main {
+      display: none;
+    }
+  }
+}
+
+.correction__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .correction__button {
   display: block;
-  padding: 21px;
+  padding: 15px;
+  width: 100%;
   color: $pink;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  background-color: none;
+  background-color: transparent;
   border: 3px solid $pink;
+  border-radius: 30px;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 183px;
+  }
+
 }
 
 .correction__button:not(:last-child) {
   margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .button--disabled {
