@@ -26,6 +26,7 @@
 
 // form.html
 
+@import "form/form.scss";
 @import "form/form-content.scss";
 @import "form/form-group.scss";
 @import "form/popup.scss";
@@ -100,7 +101,7 @@
     font-size: 18px;
     line-height: 30px;
     background-image: url("../img/back--desktop.png");
-    background-size: auto 20%;
+    background-size: 100vw auto;
   }
 
 }

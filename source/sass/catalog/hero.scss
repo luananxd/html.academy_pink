@@ -1,5 +1,6 @@
 .hero {
   padding-top: 28px;
+  min-height: 142px;
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
@@ -12,7 +13,6 @@
 
 .hero__title {
   margin: 0 auto;
-  margin-bottom: 77px;
   // min-height: 171px;
   width: 230px;
   font-size: 24px;

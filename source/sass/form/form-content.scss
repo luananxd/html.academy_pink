@@ -1,12 +1,38 @@
 .form-content {
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding-top: 44px;
+  padding-bottom: 16px;
   background-color: $white;
   color: $dark-blue-desaturarion;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 91px;
+    padding-bottom: 50px;
+  }
 }
 
 .form-content__subtitle {
-  margin: 0;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 280px;
+  line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+    width: 480px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+    width: 760px;
+  }
+}
+
+.form-content__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
