@@ -45,6 +45,7 @@
 
 .advantages__lead {
   margin: 0;
+  margin-bottom: 413px;
 }
 
 .advantages__lead:not(:last-child) {
@@ -69,29 +70,62 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 31px;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    row-gap: 35px;
+    margin: 0;
     margin-left: auto;
     padding: 0;
     width: 310px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
     width: auto;
   }
 }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 31px;
+.advantages__item {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0;
+    width: 300px;
+  }
+}
+
+.advantages__image-wrapper {
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: -8px;
+      width: 300px;
+      height: 17px;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 49.80%, rgba(0, 0, 0, 0.00) 93.23%);
+      border-radius: 50%;
+      opacity: 0.3;
+      filter: blur(2px);
+    }
+  }
 }
 
 .advantages__image {
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -301px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
   }
 }
@@ -123,6 +157,16 @@
   object-fit: contain;
 }
 
+.advantages__text-wrapper {
+  background-color: $grey;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+    padding-top: 55px;
+  }
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 12px;
@@ -133,6 +177,12 @@
   @media (min-width: $tablet-width) {
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 .advantages__text {
@@ -141,5 +191,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 245px;
+    text-align: center;
   }
 }
