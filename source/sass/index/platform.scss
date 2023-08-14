@@ -26,6 +26,15 @@
   border: 3px solid $white;
   border-radius: 29px;
 
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
     padding: 16px;
@@ -67,6 +76,14 @@
 .platform__link {
   display: block;
   line-height: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .platform__description {

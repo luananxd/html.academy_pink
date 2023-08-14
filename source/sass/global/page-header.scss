@@ -37,7 +37,7 @@
   }
 
   &:active path {
-    fill: $pink;
+    fill: $white;
     opacity: 0.3;
   }
 
@@ -105,7 +105,6 @@
   }
 
   &:active::before {
-    background-color: $pink;
     opacity: 0.3;
   }
 
@@ -143,7 +142,6 @@
 
   &:active::before,
   &:active::after {
-    background-color: $pink;
     opacity: 0.3;
   }
 }
@@ -217,7 +215,6 @@
   }
 
   &:active {
-    color: $pink;
     opacity: 0.3;
   }
 

@@ -31,7 +31,7 @@
   fill: #d22856;
 }
 .page-header__logo-img:active path {
-  fill: #d22856;
+  fill: #ffffff;
   opacity: 0.3;
 }
 .page-header__logo-img--tablet, .page-header__logo-img--desktop {
@@ -76,7 +76,6 @@
   box-shadow: 0 10px 0 #d22856, 0 -10px 0 #d22856;
 }
 .page-header__toggle:active::before {
-  background-color: #d22856;
   opacity: 0.3;
 }
 @media (min-width: 1100px) {
@@ -108,7 +107,6 @@
   background-color: #d22856;
 }
 .page-header--open .page-header__toggle:active::before, .page-header--open .page-header__toggle:active::after {
-  background-color: #d22856;
   opacity: 0.3;
 }
 
@@ -180,7 +178,6 @@
   color: #d22856;
 }
 .page-header__link:active {
-  color: #d22856;
   opacity: 0.3;
 }
 @media (min-width: 1100px) {
@@ -422,6 +419,13 @@
   border: 3px solid #ffffff;
   border-radius: 29px;
 }
+.platform__button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+.platform__button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
 @media (min-width: 660px) {
   .platform__button {
     margin-bottom: 46px;
@@ -468,6 +472,12 @@
 .platform__link {
   display: block;
   line-height: 0;
+}
+.platform__link:hover {
+  opacity: 0.6;
+}
+.platform__link:active {
+  opacity: 0.3;
 }
 
 .platform__description {
