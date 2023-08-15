@@ -21,6 +21,18 @@
     padding-bottom: 33px;
     padding-right: 65px;
     padding-left: 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 79px;
+      height: 63px;
+      background-image: url("../../img/page-content/reviews/quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -34,7 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 690px;
   }
 }
 

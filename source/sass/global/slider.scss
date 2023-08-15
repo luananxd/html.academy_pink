@@ -17,21 +17,85 @@
 .slider__toggles {
   display: block;
   margin: 0 auto;
-  width: 56px;
+
+
+  &--mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+  }
 
   &--desktop {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    &--desktop {
-      display: block;
-    }
-
     &--mobile {
       display: none;
     }
 
+    &--desktop {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 213px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 940px;
+    }
   }
 }
+
+.slider__toggle {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+
+  &--current::before {
+    outline: 3px solid $dark-blue-desaturarion;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(40, 54, 69, 0.3);
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 44px;
+    background-image: url("../img/page-content/reviews/arrow.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &--left {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+}
+
 
