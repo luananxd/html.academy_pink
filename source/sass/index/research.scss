@@ -26,11 +26,33 @@
 }
 
 .research__center {
+  position: relative;
   margin: 0 auto;
   width: 620px;
 
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -41px;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/page-content/research/timer.svg");
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 940px;
+
+    &::before {
+      top: -94px;
+      left: 0;
+      width: 298px;
+      height: 345px;
+    }
   }
 }
 

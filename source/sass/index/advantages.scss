@@ -24,7 +24,8 @@
     padding-left: 65px;
     padding-right: 65px;
     background-image: url("../img/page-content/advantages/advantages-background--desktop.svg");
-    background-size: 100vw auto;
+    background-size: 100% auto;
+    background-position: center 380px;
   }
 }
 
@@ -38,14 +39,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 413px;
     padding: 0;
   }
 }
 
 .advantages__lead {
   margin: 0;
-  margin-bottom: 413px;
 }
 
 .advantages__lead:not(:last-child) {

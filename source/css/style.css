@@ -520,7 +520,8 @@
     padding-left: 65px;
     padding-right: 65px;
     background-image: url("../img/page-content/advantages/advantages-background--desktop.svg");
-    background-size: 100vw auto;
+    background-size: 100% auto;
+    background-position: center 380px;
   }
 }
 
@@ -536,14 +537,13 @@
 }
 @media (min-width: 1100px) {
   .advantages__lead-box {
-    margin-bottom: 57px;
+    margin-bottom: 413px;
     padding: 0;
   }
 }
 
 .advantages__lead {
   margin: 0;
-  margin-bottom: 413px;
 }
 
 .advantages__lead:not(:last-child) {
@@ -737,12 +737,32 @@
 }
 
 .research__center {
+  position: relative;
   margin: 0 auto;
   width: 620px;
+}
+@media (min-width: 660px) {
+  .research__center::before {
+    content: "";
+    position: absolute;
+    top: -41px;
+    left: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/page-content/research/timer.svg");
+    background-size: contain;
+    background-position: center center;
+  }
 }
 @media (min-width: 1100px) {
   .research__center {
     width: 940px;
+  }
+  .research__center::before {
+    top: -94px;
+    left: 0;
+    width: 298px;
+    height: 345px;
   }
 }
 
