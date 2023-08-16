@@ -16,6 +16,7 @@
 }
 
 .table__title {
+  position: relative;
   padding: 12px;
   padding-bottom: 29px;
   background-color: $dark-blue-desaturarion;
@@ -26,6 +27,25 @@
 
   &--option {
     display: none;
+  }
+
+  &--heat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/page-content/price/heat.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      left: 0;
+      width: 55px;
+      height: 55px;
+      background-size: contain;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -67,7 +87,8 @@
 }
 
 .table__item {
-  padding: 25px;
+  position: relative;
+  padding: 14px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $white;
@@ -81,16 +102,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 8px 15px;
-    width: 155px;
+    padding: 7px 15px;
+    min-width: 153px;
     text-transform: none;
 
     &--option {
-    display: table-cell;
+      display: table-cell;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 16px;
     width: 235px;
 
@@ -101,7 +122,6 @@
 }
 
 .table__content {
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -109,15 +129,28 @@
 
 .table__status {
   display: block;
+  position: absolute;
+  top: 16px;
+  right: 19px;
   width: 27px;
   height: 27px;
-  background-image: url("../../img/page-content/table/no.svg");
+  background-image: url("../img/page-content/table/no.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
   &--on {
+    top: 19px;
     width: 31px;
     height: 21px;
-    background-image: url("../../img/page-content/table/yes.svg");
+    background-image: url("../img/page-content/table/yes.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
+
+
+
