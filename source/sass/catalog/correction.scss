@@ -77,44 +77,185 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 50%;
+    width: 275px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
+}
+
+.correction__parameters {
+  display: flex;
+  column-gap: 35px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  width: 214px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.correction__parameter {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 48px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+
+  &--current .correction__icon path {
+    fill: $pink;
+    opacity: 1;
+  }
+}
+
+.correction__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.correction__icon path {
+  fill: $dark-blue-desaturarion;
+  opacity: 0.3;
 }
 
 .correction__lines {
   margin-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 181px;
+  }
 }
 
 .correction__line {
-  &--size,
-  &--tint,
-  &--contrast {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue-desaturarion;
+
+  &:not(.correction__line--main) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    &--size,
-    &--tint,
-    &--contrast {
-      display: block;
-    }
+    margin: 0;
+    margin-left: 57px;
 
     &--main {
       display: none;
     }
+
+    &:not(.correction__line--main) {
+      display: block;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+
+    // Иконки настроек
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -53px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 22px;
+      background-image: url("../img/catalog/correction/crop.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &--tint:before {
+      background-image: url("../img/catalog/correction/fill.svg");
+    }
+
+    &--contrast:before {
+      background-image: url("../img/catalog/correction/contrast.svg");
+    }
+
+    // Линия под настройками
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      top: 35px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba(40, 54, 69, 0.1)
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 92px;
+    width: 288px;
+
+    &::before {
+      left: -92px;
+      width: 48px;
+      height: 44px;
+      background-size: 100% 100%;
+    }
+
+    &:after {
+      right: -30px;
+      width: 410px;
+    }
+  }
+}
+
+.correction__toggle {
+  position: absolute;
+  top: 50%;
+  left: 193px;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  &:hover,
+  &:active {
+    background-color: $pink;
   }
 }
 
 .correction__button-wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 260px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 410px;
   }
 }
 
 .correction__button {
   display: block;
-  padding: 15px;
+  padding: 18px;
   width: 100%;
   color: $pink;
   font-size: 18px;
@@ -123,6 +264,39 @@
   background-color: transparent;
   border: 3px solid $pink;
   border-radius: 30px;
+
+  &--post:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &--post {
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+
+  &--disabled {
+    opacity: 0.1;
+    color: $dark-blue-desaturarion;
+    border-color: $dark-blue-desaturarion;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: $dark-blue-desaturarion;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -133,13 +307,11 @@
 .correction__button:not(:last-child) {
   margin-bottom: 12px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
-}
-
-.button--disabled {
-  opacity: 0.1;
-  color: $dark-blue-desaturarion;
-  border-color: $dark-blue-desaturarion;
 }

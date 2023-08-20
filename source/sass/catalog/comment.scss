@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-columns: 1fr 120px;
     grid-template-rows: auto 1fr 24px;
     flex-grow: 1;
     padding-top: 23px;
@@ -20,6 +21,7 @@
 }
 
 .comment__data {
+  grid-area: data;
   margin: 0;
 }
 
@@ -34,12 +36,32 @@
 }
 
 .comment__text {
+  grid-area: text;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .comment__like {
+  position: relative;
+  grid-area: like;
   color: $pink;
   font-size: 12px;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/catalog/gallery/heart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

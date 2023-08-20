@@ -1,0 +1,11 @@
+.link {
+  &:hover {
+    color: $dark-blue-desaturarion;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $dark-blue-desaturarion;
+    opacity: 0.3;
+  }
+}

@@ -39,6 +39,30 @@
   display: block;
 }
 
+.page-footer__logo-img {
+  &--desktop {
+    display: none;
+  }
+
+  &:hover path {
+    fill: $pink;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
 // Блок с социальными сетями
 
 .social {
@@ -57,6 +81,18 @@
   height: 48px;
   border: 3px solid $dark-blue-desaturarion-op;
   border-radius: 50%;
+
+  &:hover {
+    border-color: $dark-blue-desaturarion;
+  }
+
+  &:active {
+    border-color: $dark-blue-desaturarion-op;
+  }
+
+  &:active .social__logo {
+    opacity: 0.3;
+  }
 }
 
 .social__logo {
@@ -79,5 +115,16 @@
 
   @media (min-width: $desktop-width) {
     width: 153px;
+  }
+}
+
+.developer {
+  &:hover .developer__logo path {
+    fill: $dark-blue-desaturarion;
+  }
+
+  &:active .developer__logo path {
+    fill: $dark-blue-desaturarion;
+    opacity: 0.3;
   }
 }

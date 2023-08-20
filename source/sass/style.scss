@@ -4,6 +4,7 @@
 @import "global/page-header.scss";
 @import "global/page-footer.scss";
 @import "global/slider.scss";
+@import "global/link.scss";
 
 // index.html
 
@@ -19,9 +20,9 @@
 // catalog.html
 
 @import "catalog/hero.scss";
-@import "catalog/panorama.scss";
 @import "catalog/comment.scss";
 @import "catalog/gallery.scss";
+@import "catalog/panorama.scss";
 @import "catalog/correction.scss";
 
 // form.html

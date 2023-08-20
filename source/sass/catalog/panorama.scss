@@ -53,6 +53,10 @@
 }
 
 .panorama__comment {
+  grid-template-areas:
+  "data like"
+  "text text"
+  "text text";
   margin: 0 auto;
   width: 280px;
 

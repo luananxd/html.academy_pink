@@ -63,3 +63,14 @@
   width: 100%;
   height: 100%;
 }
+
+.gallery__comment {
+  grid-template-areas:
+  "data data"
+  "text text"
+  "like like";
+}
+
+.gallery__comment .comment__text {
+  margin-bottom: 12px;
+}
