@@ -2125,7 +2125,7 @@
   margin: 0;
   padding: 0;
   padding-top: 112px;
-  padding-bottom: 44px;
+  padding-bottom: 23px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
@@ -2139,6 +2139,9 @@
   order: 3;
   padding-top: 32px;
 }
+.form-group--contacts .form-group__title {
+  display: none;
+}
 .form-group--emotion {
   order: 5;
   margin-bottom: 52px;
@@ -2150,6 +2153,7 @@
   background-color: #f2f2f2;
 }
 .form-group--app {
+  padding-bottom: 44px;
   order: 4;
   background-color: #f2f2f2;
 }
@@ -2169,6 +2173,13 @@
   .form-group--achievements {
     order: 4;
   }
+  .form-group--contacts {
+    padding: 27px 60px;
+    padding-top: 34px;
+  }
+  .form-group--contacts .form-group__title {
+    display: block;
+  }
 }
 @media (min-width: 1100px) {
   .form-group--private {
@@ -2177,10 +2188,31 @@
   }
   .form-group--app {
     padding: 54px 74px;
+    padding-top: 35px;
+    padding-bottom: 58px;
     width: 431px;
   }
   .form-group--emotion {
     margin-bottom: 0;
+  }
+  .form-group--contacts {
+    display: inline;
+    padding-top: 29px;
+    padding-bottom: 13px;
+  }
+  .form-group--contacts .form-group__wrapper {
+    display: flex;
+    column-gap: 128px;
+  }
+  .form-group--achievements {
+    padding: 35px 60px;
+    padding-bottom: 60px;
+  }
+  .form-group--achievements .form-group__wrapper {
+    display: grid;
+    grid-template-columns: 260px 220px 240px;
+    column-gap: 48px;
+    row-gap: 52px;
   }
 }
 
@@ -2194,11 +2226,106 @@
   }
 }
 
-.form-group__text {
-  color: #d22856;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
+.form-group__label {
+  display: block;
+  position: relative;
+}
+.form-group__label--private .form-group__text, .form-group__label--contacts .form-group__text {
+  margin-bottom: 7px;
+}
+.form-group__label--achievements {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+}
+.form-group__label--achievements:not(:last-child) {
+  margin-bottom: 52px;
+}
+.form-group__label--achievements .form-group__input-achievements:checked + .form-group__text--pick::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+}
+.form-group__label--app {
+  margin-left: 70px;
+}
+.form-group__label--app:not(:last-child) {
+  margin-bottom: 45px;
+}
+.form-group__label--app .form-group__text--pick::before {
+  border-radius: 50%;
+}
+.form-group__label--app .form-group__input-app:checked + .form-group__text--pick::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -43px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+@media (min-width: 660px) {
+  .form-group__label--private {
+    display: flex;
+    align-items: center;
+  }
+  .form-group__label--private:not(:last-child) {
+    margin-bottom: 56px;
+  }
+  .form-group__label--private .form-group__text {
+    margin: 0;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  .form-group__label--contacts {
+    display: grid;
+    grid-template-rows: 59px auto;
+    grid-template-areas: "input" "text";
+    row-gap: 12px;
+    width: 440px;
+  }
+  .form-group__label--contacts:not(:last-child) {
+    margin-bottom: 31px;
+  }
+  .form-group__label--contacts .form-group__text {
+    margin: 0;
+  }
+  .form-group__label--contacts::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -59px;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-image: url("../img/form/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 1px;
+  }
+  .form-group__label--email::after {
+    background-image: url("../img/form/mail.svg");
+  }
+}
+@media (min-width: 1100px) {
+  .form-group__label--contacts {
+    margin: 0;
+    width: 315px;
+  }
+  .form-group__label--contacts:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .form-group__label--achievements:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .form-group__title {
@@ -2229,22 +2356,64 @@
   }
 }
 
-.form-group--contacts .form-group__title {
-  display: none;
+.form-group__text {
+  display: block;
+  color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
-@media (min-width: 1100px) {
-  .form-group--contacts .form-group__title {
-    display: inline;
-  }
+.form-group__text--pick {
+  color: #283645;
+  font-size: 18px;
+  text-transform: none;
+}
+.form-group__text--pick::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -55px;
+  transform: translateY(-50%);
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+.form-group__text--pick:hover::before {
+  border-color: #283645;
+}
+.form-group__text--pick:active::before {
+  border-color: #d22856;
 }
 
-.form-group__input-private,
-.form-group__input-contacts {
+.form-group__input-private, .form-group__input-contacts {
+  margin-bottom: 19px;
   padding: 14px 20px;
+  width: 280px;
   color: #283645;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
+}
+.form-group__input-private:hover, .form-group__input-contacts:hover {
+  border-color: #283645;
+}
+.form-group__input-private:focus-visible, .form-group__input-contacts:focus-visible {
+  border-color: #d22856;
+}
+.form-group__input-achievements:focus-visible + .form-group__text--pick::before, .form-group__input-app:focus-visible + .form-group__text--pick::before {
+  border-color: #283645;
+}
+@media (min-width: 660px) {
+  .form-group__input-private, .form-group__input-contacts {
+    margin: 0;
+    width: 100%;
+  }
+  .form-group__input-contacts {
+    position: relative;
+    grid-area: input;
+  }
 }
 
 .form-group__input-private::placeholder,
@@ -2253,12 +2422,6 @@
   color: #283645;
   font-size: 18px;
   line-height: 30px;
-}
-
-.form-group__text--pick {
-  color: #283645;
-  font-size: 18px;
-  text-transform: none;
 }
 
 .form-group__textarea {

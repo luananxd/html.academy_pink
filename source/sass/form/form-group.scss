@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   padding-top: 112px;
-  padding-bottom: 44px;
+  padding-bottom: 23px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
@@ -17,6 +17,10 @@
   &--contacts {
     order: 3;
     padding-top: 32px;
+
+    & .form-group__title {
+      display: none;
+    }
   }
 
   &--emotion {
@@ -32,6 +36,7 @@
   }
 
   &--app {
+    padding-bottom: 44px;
     order: 4;
     background-color: $grey;
   }
@@ -54,6 +59,15 @@
     &--achievements {
       order: 4;
     }
+
+    &--contacts {
+      padding: 27px 60px;
+      padding-top: 34px;
+
+      & .form-group__title {
+        display: block;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -64,11 +78,36 @@
 
     &--app {
       padding: 54px 74px;
+      padding-top: 35px;
+      padding-bottom: 58px;
       width: 431px;
     }
 
     &--emotion {
       margin-bottom: 0;
+    }
+
+    &--contacts {
+      display: inline;
+      padding-top: 29px;
+      padding-bottom: 13px;
+
+      & .form-group__wrapper {
+        display: flex;
+        column-gap: 128px;
+      }
+    }
+
+    &--achievements {
+      padding: 35px 60px;
+      padding-bottom: 60px;
+
+      & .form-group__wrapper {
+        display: grid;
+        grid-template-columns: 260px 220px 240px;
+        column-gap: 48px;
+        row-gap: 52px;
+      }
     }
   }
 }
@@ -82,11 +121,138 @@
   }
 }
 
-.form-group__text {
-  color: $pink;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
+.form-group__label {
+  display: block;
+  position: relative;
+
+  &--private,
+  &--contacts {
+    & .form-group__text {
+      margin-bottom: 7px;
+    }
+  }
+
+  &--achievements {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+
+    // Галочка чекбокса
+
+    & .form-group__input-achievements:checked + .form-group__text--pick::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -47px;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 16px;
+      background-image: url("../img/form/tick.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--app {
+    margin-left: 70px;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
+    & .form-group__text--pick::before {
+      border-radius: 50%;
+    }
+
+    // Кружок радио
+
+    & .form-group__input-app:checked + .form-group__text--pick::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -43px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background-color: $pink;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--private {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 56px;
+      }
+
+      & .form-group__text {
+        margin: 0;
+        margin-right: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    &--contacts {
+      display: grid;
+      grid-template-rows: 59px auto;
+      grid-template-areas:
+        "input"
+        "text";
+      row-gap: 12px;
+      width: 440px;
+
+      &:not(:last-child) {
+        margin-bottom: 31px;
+      }
+
+      & .form-group__text {
+          margin: 0;
+      }
+
+      // Иконки контакты
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -59px;
+        width: 59px;
+        height: 59px;
+        background-color: $grey-2;
+        background-image: url("../img/form/phone.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 1px;
+      }
+    }
+
+    &--email::after {
+      background-image: url("../img/form/mail.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contacts {
+      margin: 0;
+      width: 315px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &--achievements {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .form-group__title {
@@ -115,21 +281,80 @@
   }
 }
 
-.form-group--contacts .form-group__title {
-  display: none;
+.form-group__text {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
-    display: inline;
+  &--pick {
+    color: $dark-blue-desaturarion;
+    font-size: 18px;
+    text-transform: none;
+
+    // Кастомный инпут
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -55px;
+      transform: translateY(-50%);
+      width: 39px;
+      height: 39px;
+      background-color: $white;
+      border: 2px solid $grey-2;
+      border-radius: 1px;
+    }
+
+    &:hover::before {
+      border-color: $dark-blue-desaturarion;
+    }
+
+    &:active::before {
+      border-color: $pink;
+    }
   }
 }
 
-.form-group__input-private,
-.form-group__input-contacts {
-  padding: 14px 20px;
-  color: $dark-blue-desaturarion;
-  font-size: 18px;
-  line-height: 30px;
-  border: 2px solid $grey-2;
+.form-group__input {
+  &-private,
+  &-contacts {
+    margin-bottom: 19px;
+    padding: 14px 20px;
+    width: 280px;
+    color: $dark-blue-desaturarion;
+    font-size: 18px;
+    line-height: 30px;
+    border: 2px solid $grey-2;
+
+    &:hover {
+      border-color: $dark-blue-desaturarion;
+    }
+
+    &:focus-visible {
+      border-color: $pink;
+    }
+  }
+
+  &-achievements:focus-visible + .form-group__text--pick::before,
+  &-app:focus-visible + .form-group__text--pick::before {
+    border-color: $dark-blue-desaturarion;
+  }
+
+  @media (min-width: $tablet-width) {
+    &-private,
+    &-contacts {
+      margin: 0;
+      width: 100%;
+    }
+
+    &-contacts {
+      position: relative;
+      grid-area: input;
+    }
+  }
 }
 
 .form-group__input-private::placeholder,
@@ -138,12 +363,6 @@
   color: $dark-blue-desaturarion;
   font-size: 18px;
   line-height: 30px;
-}
-
-.form-group__text--pick {
-  color: $dark-blue-desaturarion;
-  font-size: 18px;
-  text-transform: none;
 }
 
 .form-group__textarea {
