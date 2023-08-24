@@ -47,7 +47,7 @@
 
 .comment__like {
   position: relative;
-  grid-area: like;
+  margin-left: 31px;
   color: $pink;
   font-size: 12px;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
   &::after {
     content: "";
     position: absolute;
-    right: 0;
+    left: -31px;
     top: 50%;
     transform: translateY(-50%);
     width: 13px;
@@ -63,5 +63,15 @@
     background-image: url("../img/catalog/gallery/heart.svg");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: like;
+    margin: 0;
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
   }
 }

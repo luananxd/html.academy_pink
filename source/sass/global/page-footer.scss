@@ -63,45 +63,6 @@
   }
 }
 
-// Блок с социальными сетями
-
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: 178px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social__link {
-  display: block;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  border: 3px solid $dark-blue-desaturarion-op;
-  border-radius: 50%;
-
-  &:hover {
-    border-color: $dark-blue-desaturarion;
-  }
-
-  &:active {
-    border-color: $dark-blue-desaturarion-op;
-  }
-
-  &:active .social__logo {
-    opacity: 0.3;
-  }
-}
-
-.social__logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 // Разработчик
 
 .developer {

@@ -1,42 +1,119 @@
-.popup {
+.popup-bg {
   display: none;
-  padding: 49px;
-  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  width: 320px;
   background-color: $white;
   color: $dark-blue-desaturarion;
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+
+  &--error {
+    padding-bottom: 54px;
+
+    & .popup__wrapper {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 780px;
+  }
+
+  &--error {
+    padding-bottom: 0;
+
+    & .popup__wrapper {
+      padding: 54px 0;
+      background-color: $grey;
+    }
+
+    & .popup__text {
+      margin-bottom: 63px;
+    }
+  }
+}
+
+.popup--open {
+  display: block;
 }
 
 .popup__title {
-  margin: 0;
-  margin-bottom: 37px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   padding: 0;
+  width: 280px;
   color: $black;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .popup__text {
-  margin: 0;
-  margin-bottom: 41px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   padding: 0;
+  width: 280px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+    width: 380px;
+  }
 }
 
 .popup__wrapper {
-  padding: 52px 20px;
+  padding: 54px 0;
   background-color: $grey;
 }
 
 .popup__button {
-  padding: 25px;
+  margin: 0 auto;
+  width: 280px;
   background-color: $green;
   color: $white;
-  font-size: 18px;
-  font-weight: 700;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  border: none;
   border-radius: 1px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-green;
+  }
 }

@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 15px;
+  background-color: transparent;
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    color: $white;
+    background-color: $grey-2;
+
+    &:hover {
+      background-color: rgba(40, 54, 69, 0.3);
+    }
+  }
+}
+
+.button--border {
+  border: 3px solid $white;
+}
+
+.button--rounded {
+  border-radius: 29px;
+}

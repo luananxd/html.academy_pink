@@ -2,8 +2,8 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 112px;
-  padding-bottom: 23px;
+  padding-top: 117px;
+  padding-bottom: 47px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
@@ -12,11 +12,23 @@
   &--private {
     order: 1;
     padding-top: 0;
+
+    & .form-group__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 45px;
+    }
   }
 
   &--contacts {
     order: 3;
     padding-top: 32px;
+
+    & .form-group__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 19px;
+    }
 
     & .form-group__title {
       display: none;
@@ -33,12 +45,24 @@
   &--achievements {
     order: 2;
     background-color: $grey;
+
+    & .form-group__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 52px;
+    }
   }
 
   &--app {
     padding-bottom: 44px;
     order: 4;
     background-color: $grey;
+
+    & .form-group__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 45px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -49,6 +73,10 @@
     &--private {
       padding: 0;
       border: none;
+
+      & .form-group__wrapper {
+        row-gap: 56px;
+      }
     }
 
     &--app {
@@ -63,6 +91,10 @@
     &--contacts {
       padding: 27px 60px;
       padding-top: 34px;
+
+      & .form-group__wrapper {
+        row-gap: 31px;
+      }
 
       & .form-group__title {
         display: block;
@@ -94,6 +126,8 @@
 
       & .form-group__wrapper {
         display: flex;
+        flex-direction: row;
+        row-gap: 0;
         column-gap: 128px;
       }
     }
@@ -137,10 +171,6 @@
     align-items: center;
     margin-left: 55px;
 
-    &:not(:last-child) {
-      margin-bottom: 52px;
-    }
-
     // Галочка чекбокса
 
     & .form-group__input-achievements:checked + .form-group__text--pick::after {
@@ -158,10 +188,6 @@
 
   &--app {
     margin-left: 70px;
-
-    &:not(:last-child) {
-      margin-bottom: 45px;
-    }
 
     & .form-group__text--pick::before {
       border-radius: 50%;
@@ -187,10 +213,6 @@
       display: flex;
       align-items: center;
 
-      &:not(:last-child) {
-        margin-bottom: 56px;
-      }
-
       & .form-group__text {
         margin: 0;
         margin-right: 20px;
@@ -207,12 +229,8 @@
       row-gap: 12px;
       width: 440px;
 
-      &:not(:last-child) {
-        margin-bottom: 31px;
-      }
-
       & .form-group__text {
-          margin: 0;
+        margin: 0;
       }
 
       // Иконки контакты
@@ -241,16 +259,6 @@
     &--contacts {
       margin: 0;
       width: 315px;
-
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-    }
-
-    &--achievements {
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -321,7 +329,6 @@
 .form-group__input {
   &-private,
   &-contacts {
-    margin-bottom: 19px;
     padding: 14px 20px;
     width: 280px;
     color: $dark-blue-desaturarion;

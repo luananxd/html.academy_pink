@@ -3,8 +3,10 @@
 @import "global/variables.scss";
 @import "global/page-header.scss";
 @import "global/page-footer.scss";
+@import "global/social.scss";
 @import "global/slider.scss";
 @import "global/link.scss";
+@import "global/button.scss";
 
 // index.html
 
@@ -80,6 +82,7 @@
 }
 
 .page-body {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: $dark-blue;

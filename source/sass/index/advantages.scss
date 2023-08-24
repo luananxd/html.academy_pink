@@ -30,10 +30,14 @@
 }
 
 .advantages__lead-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
   margin-bottom: 112px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    row-gap: 0;
     margin-bottom: 106px;
     padding: 0;
   }
@@ -46,14 +50,6 @@
 
 .advantages__lead {
   margin: 0;
-}
-
-.advantages__lead:not(:last-child) {
-  margin-bottom: 29px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .advantages__center {
