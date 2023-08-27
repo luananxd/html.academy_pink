@@ -142,18 +142,4 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  &--tablet {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
 }

@@ -7,6 +7,7 @@
 @import "global/slider.scss";
 @import "global/link.scss";
 @import "global/button.scss";
+@import "global/lead.scss";
 
 // index.html
 
@@ -96,35 +97,27 @@
   line-height: 24px;
   overflow-x: hidden;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back--mobile@2x.png");
+    background-size: 100vw auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/back--tablet.png");
-    background-size: auto 18%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back--tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
     background-image: url("../img/back--desktop.png");
-    background-size: 2600px auto;
+    background-size: auto 865px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back--desktop@2x.png");
+    }
   }
-
-}
-
-.lead {
-  display: block;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 120%;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 40px;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    font-size: 50px;
-    line-height: normal;
-  }
-
 }

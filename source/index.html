@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-180px.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
     <title>Pink</title>
   </head>
   <body class="page-body">
@@ -86,7 +92,7 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/page-content/advantages/advantages__image--1.png" width="186" height="382" alt="Унылое изображение на экране телефона.">
+                <img class="advantages__image" src="img/page-content/advantages/advantages__image--1.png" width="186" height="382" alt="Унылое изображение на экране телефона." srcset="img/page-content/advantages/advantages__image--1@2x.png 2x">
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__title">Поднимает настроение</h3>
@@ -95,7 +101,7 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/page-content/advantages/advantages__image--2.png" width="186" height="382" alt="Изображение с розовым фильтром на экране телефона.">
+                <img class="advantages__image" src="img/page-content/advantages/advantages__image--2.png" width="186" height="382" alt="Изображение с розовым фильтром на экране телефона." srcset="img/page-content/advantages/advantages__image--2@2x.png 2x">
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -104,7 +110,7 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/page-content/advantages/advantages__image--3.png" width="186" height="382" alt="Смайлик на фоне розового изображения на экране телефона.">
+                <img class="advantages__image" src="img/page-content/advantages/advantages__image--3.png" width="186" height="382" alt="Смайлик на фоне розового изображения на экране телефона." srcset="img/page-content/advantages/advantages__image--3@2x.png 2x">
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__title">Заводите новых друзей</h3>
@@ -113,7 +119,7 @@
             </li>
           </ul>
           <div class="advantages__image advantages__image--big">
-            <img class="advantages__image-src" src="img/page-content/advantages/advantages__image--big.png" width="157" height="320" alt="Смайлик на фоне розового изображения на экране телефона.">
+            <img class="advantages__image-src" src="img/page-content/advantages/advantages__image--big.png" width="157" height="320" alt="Смайлик на фоне розового изображения на экране телефона." srcset="img/page-content/advantages/advantages__image--big@2x.png 2x">
           </div>
         </div>
       </section>
@@ -218,8 +224,11 @@
           </div>
         </div>
         <div class="contacts__map-box">
-          <img class="contacts__map contacts__map--mobile" src="img/page-content/contacts/map--mobile.png" width="320" height="200" alt="Карта с отметкой адреса офиса: ул. Большая Конюшенная, 19/8.">
-          <img class="contacts__map contacts__map--tablet" src="img/page-content/contacts/map.png" width="1200" height="502" alt="Карта с отметкой адреса офиса: ул. Большая Конюшенная, 19/8.">
+          <picture>
+            <source media="(min-width: 1100px)" srcset="img/page-content/contacts/map--desktop.png 1x, img/page-content/contacts/map--desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/page-content/contacts/map--tablet.png 1x, img/page-content/contacts/map--tablet@2x.png 2x">
+            <img class="contacts__map" src="img/page-content/contacts/map--mobile.png" width="1200" height="502" alt="Карта с отметкой адреса офиса: ул. Большая Конюшенная, 19/8." srcset="img/page-content/contacts/map--mobile@2x.png x2">
+          </picture>
         </div>
       </section>
     </main>

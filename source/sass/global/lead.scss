@@ -1,0 +1,18 @@
+
+.lead {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: normal;
+  }
+}
