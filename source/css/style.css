@@ -26,30 +26,30 @@
   line-height: 0;
   text-decoration: none;
 }
-
-.page-header__logo-img:hover path {
-  fill: #d22856;
+.page-header__logo:hover {
+  color: #d22856;
 }
-.page-header__logo-img:active path {
-  fill: #ffffff;
+.page-header__logo:active {
+  color: inherit;
   opacity: 0.3;
 }
-.page-header__logo-img--tablet, .page-header__logo-img--desktop {
+
+.page-header__logo-icon--tablet, .page-header__logo-icon--desktop {
   display: none;
 }
 @media (min-width: 660px) {
-  .page-header__logo-img--mobile, .page-header__logo-img--desktop {
+  .page-header__logo-icon--mobile, .page-header__logo-icon--desktop {
     display: none;
   }
-  .page-header__logo-img--tablet {
+  .page-header__logo-icon--tablet {
     display: block;
   }
 }
 @media (min-width: 1100px) {
-  .page-header__logo-img--mobile, .page-header__logo-img--tablet {
+  .page-header__logo-icon--mobile, .page-header__logo-icon--tablet {
     display: none;
   }
-  .page-header__logo-img--desktop {
+  .page-header__logo-icon--desktop {
     display: block;
   }
 }
@@ -253,16 +253,18 @@
 
 .page-footer__logo {
   display: block;
+  color: #283645;
+}
+.page-footer__logo:hover {
+  color: #d22856;
+}
+.page-footer__logo:active {
+  color: inherit;
+  opacity: 0.3;
 }
 
 .page-footer__logo-img--desktop {
   display: none;
-}
-.page-footer__logo-img:hover path {
-  fill: #d22856;
-}
-.page-footer__logo-img:active path {
-  opacity: 0.3;
 }
 @media (min-width: 1100px) {
   .page-footer__logo-img--mobile {
@@ -282,18 +284,21 @@
   line-height: 18px;
   text-decoration: none;
 }
+.developer:hover, .developer:hover .developer__logo {
+  color: #283645;
+}
+.developer:active, .developer:active .developer__logo {
+  fill: #283645;
+  opacity: 0.3;
+}
 @media (min-width: 1100px) {
   .developer {
     width: 153px;
   }
 }
 
-.developer:hover .developer__logo path {
-  fill: #283645;
-}
-.developer:active .developer__logo path {
-  fill: #283645;
-  opacity: 0.3;
+.developer__logo {
+  color: #d22856;
 }
 
 .social {
@@ -480,6 +485,7 @@
   background-image: url("../img/page-content/download/hand-back--mobile.png");
   background-position: center 90px;
   background-repeat: no-repeat;
+  background-size: 320px auto;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .download {
@@ -493,6 +499,7 @@
     padding-bottom: 114px;
     background-image: url("../img/page-content/download/hand-back--tablet.png");
     background-position: center bottom;
+    background-size: 620px auto;
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
@@ -507,6 +514,7 @@
     padding-bottom: 125px;
     background-image: url("../img/page-content/download/hand-back--desktop.png");
     background-position: center bottom;
+    background-size: 940px auto;
   }
 }
 @media (min-width: 1100px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1100px) and (min-resolution: 2dppx) {
@@ -1854,9 +1862,14 @@
   height: 44px;
   background-color: transparent;
   border: none;
+  color: #283645;
+  opacity: 0.3;
 }
-.correction__parameter--current .correction__icon path {
-  fill: #d22856;
+.correction__parameter:hover {
+  opacity: 0.5;
+}
+.correction__parameter:active, .correction__parameter--current {
+  color: #d22856;
   opacity: 1;
 }
 
@@ -1865,11 +1878,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.correction__icon path {
-  fill: #283645;
-  opacity: 0.3;
 }
 
 .correction__lines {

@@ -105,9 +105,16 @@
   height: 44px;
   background-color: transparent;
   border: none;
+  color: $dark-blue-desaturarion;
+  opacity: 0.3;
 
-  &--current .correction__icon path {
-    fill: $pink;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active,
+  &--current {
+    color: $pink;
     opacity: 1;
   }
 }
@@ -117,11 +124,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.correction__icon path {
-  fill: $dark-blue-desaturarion;
-  opacity: 0.3;
 }
 
 .correction__lines {

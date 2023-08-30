@@ -27,19 +27,18 @@
   color: $white;
   line-height: 0;
   text-decoration: none;
-}
 
-.page-header__logo-img {
-  // Состояния
-
-  &:hover path {
-    fill: $pink;
+  &:hover {
+    color: $pink;
   }
 
-  &:active path {
-    fill: $white;
+  &:active {
+    color: inherit;
     opacity: 0.3;
   }
+}
+
+.page-header__logo-icon {
 
   // Скрывает логотип для планшета и десктопа
 
