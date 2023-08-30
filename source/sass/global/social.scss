@@ -1,9 +1,9 @@
 .social {
   display: flex;
-  justify-content: space-between;
-  width: 178px;
+  column-gap: 14px;
   margin: 0;
   padding: 0;
+  margin-right: auto;
   list-style: none;
 }
 

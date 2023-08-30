@@ -25,13 +25,11 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -46,6 +44,14 @@
   &:active {
     color: inherit;
     opacity: 0.3;
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-right: 79px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-right: 240px;
   }
 }
 
