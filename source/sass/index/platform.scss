@@ -14,7 +14,10 @@
 .platform__button {
   margin: 0 auto;
   margin-bottom: 32px;
+  padding: 16px;
   width: 280px;
+  text-align: center;
+  line-height: 18px;
 
   &:hover {
     color: $pink;
@@ -26,12 +29,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 300px;
     margin-bottom: 46px;
-    padding: 16px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 67px;
+    font-size: 21px;
   }
 }
 
@@ -58,7 +62,7 @@
     margin-bottom: 32px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 52px;
   }
 }
@@ -81,8 +85,10 @@
   max-width: 280px;
   font-weight: 300;
   text-align: center;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    font-size: 18px;
   }
 }

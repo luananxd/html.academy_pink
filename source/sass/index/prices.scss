@@ -1,15 +1,15 @@
 .prices {
   padding-top: 127px;
-  padding-bottom: 49px;
+  padding-bottom: 36px;
   background-color: $white;
   background-image: url("../img/page-content/price/price-background--mobile.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 1214px 506px;
   color: $dark-blue-desaturarion;
 
   @media (min-width: $tablet-width) {
-    padding-top: 114px;
+    padding-top: 105px;
   padding-bottom: 70px;
     background-image: url("../img/page-content/price/price-background--tablet.svg");
     background-size: 1200px 400px;

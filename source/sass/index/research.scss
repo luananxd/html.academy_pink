@@ -81,6 +81,14 @@
   }
 }
 
+.research__break {
+  display: inline;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .research__text {
   margin: 0;
   margin-bottom: 10px;

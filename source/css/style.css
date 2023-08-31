@@ -1,8 +1,8 @@
 .page-header {
   position: relative;
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 18px;
@@ -32,6 +32,11 @@
 .page-header__logo:active {
   color: inherit;
   opacity: 0.3;
+}
+@media (min-width: 1100px) {
+  .page-header__logo {
+    margin-right: 173px;
+  }
 }
 
 .page-header__logo-icon--tablet, .page-header__logo-icon--desktop {
@@ -118,6 +123,7 @@
 }
 @media (min-width: 660px) {
   .page-header__nav {
+    align-items: end;
     width: 620px;
   }
 }
@@ -137,6 +143,7 @@
   .page-header__list {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     width: 620px;
     background-color: transparent;
   }
@@ -181,7 +188,9 @@
 }
 @media (min-width: 1100px) {
   .page-header__link {
-    padding: 10px;
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 4px;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
@@ -223,7 +232,7 @@
 }
 @media (min-width: 1100px) {
   .page-footer {
-    padding-top: 70px;
+    padding-top: 75px;
     padding-bottom: 75px;
   }
 }
@@ -232,7 +241,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 41px;
+  row-gap: 36px;
   margin: 0 auto;
   width: 280px;
 }
@@ -262,7 +271,8 @@
 }
 @media (min-width: 660px) {
   .page-footer__logo {
-    margin-right: 79px;
+    margin-right: 76px;
+    margin-bottom: auto;
   }
 }
 @media (min-width: 1100px) {
@@ -311,18 +321,23 @@
 
 .social {
   display: flex;
-  column-gap: 14px;
-  margin: 0;
+  column-gap: 8px;
+  margin: 0 auto;
   padding: 0;
-  margin-right: auto;
   list-style: none;
+}
+@media (min-width: 1100px) {
+  .social {
+    column-gap: 5px;
+    margin-right: auto;
+  }
 }
 
 .social__link {
   display: block;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 }
@@ -480,12 +495,12 @@
 @media (min-width: 660px) {
   .lead {
     font-size: 40px;
+    line-height: normal;
   }
 }
 @media (min-width: 1100px) {
   .lead {
     font-size: 50px;
-    line-height: normal;
   }
 }
 
@@ -503,7 +518,7 @@
 @media (min-width: 660px) {
   .download {
     padding: 0 20px;
-    padding-top: 93px;
+    padding-top: 74px;
     padding-bottom: 114px;
     background-image: url("../img/page-content/download/hand-back--tablet.png");
     background-position: center bottom;
@@ -549,6 +564,7 @@
   margin-top: 23px;
   margin-bottom: 315px;
   width: 280px;
+  line-height: 120%;
 }
 @media (min-width: 660px) {
   .download__lead {
@@ -563,6 +579,7 @@
   .download__lead {
     margin-bottom: 36px;
     padding-top: 0;
+    line-height: normal;
   }
 }
 
@@ -583,7 +600,10 @@
 .platform__button {
   margin: 0 auto;
   margin-bottom: 32px;
+  padding: 16px;
   width: 280px;
+  text-align: center;
+  line-height: 18px;
 }
 .platform__button:hover {
   color: #d22856;
@@ -594,13 +614,14 @@
 }
 @media (min-width: 660px) {
   .platform__button {
+    width: 300px;
     margin-bottom: 46px;
-    padding: 16px;
   }
 }
 @media (min-width: 1100px) {
   .platform__button {
     margin-bottom: 67px;
+    font-size: 21px;
   }
 }
 
@@ -629,7 +650,7 @@
     margin-bottom: 32px;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1100px) {
   .platform__list {
     margin-bottom: 52px;
   }
@@ -651,10 +672,12 @@
   max-width: 280px;
   font-weight: 300;
   text-align: center;
+  line-height: 24px;
 }
 @media (min-width: 660px) {
   .platform__description {
     max-width: 100%;
+    font-size: 18px;
   }
 }
 
@@ -687,7 +710,7 @@
     padding-right: 65px;
     background-image: url("../img/page-content/advantages/advantages-background--desktop.svg");
     background-size: 100% auto;
-    background-position: center 380px;
+    background-position: center 317px;
   }
 }
 
@@ -707,7 +730,7 @@
 }
 @media (min-width: 1100px) {
   .advantages__lead-box {
-    margin-bottom: 413px;
+    margin-bottom: 358px;
     padding: 0;
   }
 }
@@ -784,7 +807,7 @@
 @media (min-width: 1100px) {
   .advantages__image {
     position: absolute;
-    top: -301px;
+    top: -298px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -832,7 +855,7 @@
 }
 
 .advantages__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 12px;
   color: #000000;
   font-size: 18px;
@@ -846,6 +869,7 @@
 @media (min-width: 1100px) {
   .advantages__title {
     margin-bottom: 23px;
+    width: 235px;
     font-size: 30px;
     text-align: center;
   }
@@ -954,6 +978,15 @@
   }
 }
 
+.research__break {
+  display: inline;
+}
+@media (min-width: 1100px) {
+  .research__break {
+    display: none;
+  }
+}
+
 .research__text {
   margin: 0;
   margin-bottom: 10px;
@@ -972,7 +1005,7 @@
   position: relative;
   z-index: 1;
   padding-top: 41px;
-  padding-bottom: 14px;
+  padding-bottom: 4px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #ffffff;
@@ -1011,14 +1044,17 @@
   display: flex;
   flex-direction: column;
   width: 280px;
+  margin-bottom: 24px;
 }
 @media (min-width: 660px) {
   .reviews__item {
     width: 620px;
+    margin-bottom: 29px;
   }
 }
 @media (min-width: 1100px) {
   .reviews__item {
+    margin-bottom: 0;
     width: 690px;
   }
 }
@@ -1026,13 +1062,14 @@
 .reviews__text {
   order: 2;
   margin: 0;
-  margin-bottom: 44px;
+  line-height: 30px;
   text-align: center;
 }
 @media (min-width: 660px) {
   .reviews__text {
     order: 1;
     margin-bottom: 35px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1100px) {
@@ -1074,7 +1111,6 @@
     display: block;
     order: 3;
     margin: 0;
-    margin-bottom: 39px;
     color: #283645;
     line-height: 30px;
     text-align: center;
@@ -1089,17 +1125,17 @@
 
 .prices {
   padding-top: 127px;
-  padding-bottom: 49px;
+  padding-bottom: 36px;
   background-color: #ffffff;
   background-image: url("../img/page-content/price/price-background--mobile.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 1214px 506px;
   color: #283645;
 }
 @media (min-width: 660px) {
   .prices {
-    padding-top: 114px;
+    padding-top: 105px;
     padding-bottom: 70px;
     background-image: url("../img/page-content/price/price-background--tablet.svg");
     background-size: 1200px 400px;
@@ -1134,7 +1170,7 @@
 }
 
 .table {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   width: 840px;
   text-align: center;
   border-collapse: collapse;
@@ -1205,7 +1241,7 @@
 .table__tariff-name {
   font-size: 16px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px;
   text-transform: uppercase;
 }
 @media (min-width: 1100px) {
@@ -1241,7 +1277,7 @@
 }
 @media (min-width: 660px) {
   .table__item {
-    padding: 7px 15px;
+    padding: 8px 15px;
     min-width: 153px;
     text-transform: none;
   }
@@ -1295,11 +1331,6 @@
   background-color: #ffffff;
   color: #283645;
 }
-@media (min-width: 660px) {
-  .contacts {
-    padding-top: 43px;
-  }
-}
 @media (min-width: 1100px) {
   .contacts {
     padding-top: 59px;
@@ -1308,7 +1339,7 @@
 
 .contacts__lead {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 @media (min-width: 1100px) {
   .contacts__lead {
@@ -1320,12 +1351,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 34px;
 }
 @media (min-width: 660px) {
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 41px;
     margin: 0 auto;
     margin-bottom: 23px;
@@ -1343,13 +1375,13 @@
 .contacts__item {
   line-height: normal;
 }
-@media (min-width: 660px) {
-  .contacts__item {
-    margin: 0 auto;
-    width: 250px;
-  }
+.contacts__item--address {
+  margin: 0 auto;
 }
 @media (min-width: 1100px) {
+  .contacts__item {
+    margin: 0;
+  }
   .contacts__item--mail {
     order: 3;
   }
@@ -1365,6 +1397,11 @@
 @media (min-width: 660px) {
   .contacts__title {
     margin-bottom: 4px;
+  }
+}
+@media (min-width: 1100px) {
+  .contacts__title {
+    margin-bottom: 21px;
   }
 }
 
@@ -1405,7 +1442,7 @@
 }
 @media (min-width: 660px) {
   .contacts__map-box:after {
-    background-position: center -32px;
+    background-position: center -36px;
   }
 }
 @media (min-width: 1100px) {
@@ -2686,6 +2723,7 @@
 @media (min-width: 660px) {
   .page-body {
     background-image: url("../img/back--tablet.png");
+    background-size: 1200px auto;
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {

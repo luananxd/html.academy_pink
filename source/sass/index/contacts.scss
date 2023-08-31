@@ -3,10 +3,6 @@
   background-color: $white;
   color: $dark-blue-desaturarion;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 43px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-top: 59px;
   }
@@ -14,7 +10,7 @@
 
 .contacts__lead {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
@@ -25,11 +21,12 @@
   display: flex;
   flex-direction: column;
   row-gap: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 41px;
     margin: 0 auto;
     margin-bottom: 23px;
@@ -46,12 +43,13 @@
 .contacts__item {
   line-height: normal;
 
-  @media (min-width: $tablet-width) {
+  &--address {
     margin: 0 auto;
-    width: 250px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+
     &--mail {
       order: 3;
     }
@@ -67,6 +65,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
   }
 }
 
@@ -106,7 +108,7 @@
     background-position: center -71px;
 
     @media (min-width: $tablet-width) {
-      background-position: center -32px;
+      background-position: center -36px;
     }
 
     @media (min-width: $desktop-width) {

@@ -25,7 +25,7 @@
     padding-right: 65px;
     background-image: url("../img/page-content/advantages/advantages-background--desktop.svg");
     background-size: 100% auto;
-    background-position: center 380px;
+    background-position: center 317px;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 413px;
+    margin-bottom: 358px;
     padding: 0;
   }
 }
@@ -119,7 +119,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -301px;
+    top: -298px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -164,7 +164,7 @@
 }
 
 .advantages__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 12px;
   color: $black;
   font-size: 18px;
@@ -176,6 +176,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
+    width: 235px;
     font-size: 30px;
     text-align: center;
   }

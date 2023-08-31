@@ -104,6 +104,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back--tablet.png");
+    background-size: 1200px auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back--tablet@2x.png");

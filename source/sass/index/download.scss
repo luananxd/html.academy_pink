@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 20px;
-    padding-top: 93px;
+    padding-top: 74px;
     padding-bottom: 114px;
     background-image: url("../img/page-content/download/hand-back--tablet.png");
     background-position: center bottom;
@@ -53,6 +53,7 @@
   margin-top: 23px;
   margin-bottom: 315px;
   width: 280px;
+  line-height: 120%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -65,5 +66,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 36px;
     padding-top: 0;
+    line-height: normal;
   }
 }

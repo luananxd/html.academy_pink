@@ -8,11 +8,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    line-height: normal;
   }
 
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
-    line-height: normal;
   }
 }
