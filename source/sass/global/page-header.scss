@@ -234,8 +234,8 @@
     &--current::before {
       content: "";
       position: absolute;
-      bottom: -11px;
-      width: calc(100% - 20px);
+      bottom: -9px;
+      width: 100%;
       height: 2px;
       background-color: $white;
     }

@@ -13,10 +13,17 @@
     grid-template-columns: 1fr 120px;
     grid-template-rows: auto 1fr 24px;
     flex-grow: 1;
-    padding-top: 23px;
-    padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 23px;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 23px;
+    padding-right: 31px;
+    padding-left: 27px;
   }
 }
 

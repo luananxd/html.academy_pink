@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   padding-top: 117px;
-  padding-bottom: 47px;
+  padding-bottom: 40px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
@@ -16,7 +16,7 @@
     & .form-group__wrapper {
       display: flex;
       flex-direction: column;
-      row-gap: 45px;
+      row-gap: 19px;
     }
   }
 
@@ -44,6 +44,7 @@
 
   &--achievements {
     order: 2;
+    padding-bottom: 45px;
     background-color: $grey;
 
     & .form-group__wrapper {
@@ -65,8 +66,11 @@
     }
   }
 
+  // Стили филдсетов для планшета
+
   @media (min-width: $tablet-width) {
-    padding: 60px 50px;
+    padding: 58px 50px;
+    padding-top: 45px;
     background-color: $white;
     border: 2px solid $grey-2;
 
@@ -75,7 +79,7 @@
       border: none;
 
       & .form-group__wrapper {
-        row-gap: 56px;
+        row-gap: 54px;
       }
     }
 
@@ -86,6 +90,12 @@
 
     &--achievements {
       order: 4;
+    }
+
+    &--emotion {
+      margin: 0;
+      padding: 35px 57px;
+      padding-bottom: 50px;
     }
 
     &--contacts {
@@ -102,26 +112,30 @@
     }
   }
 
+  // Стили филдсетов для компьютера
+
   @media (min-width: $desktop-width) {
     &--private {
-      padding-top: 23px;
+      padding-top: 20px;
       width: 433px;
     }
 
     &--app {
-      padding: 54px 74px;
-      padding-top: 35px;
+      padding: 0;
+      padding-top: 48px;
       padding-bottom: 58px;
       width: 431px;
     }
 
     &--emotion {
       margin-bottom: 0;
+      padding: 31px 62px;
+      padding-bottom: 45px;
     }
 
     &--contacts {
       display: inline;
-      padding-top: 29px;
+      padding-top: 30px;
       padding-bottom: 13px;
 
       & .form-group__wrapper {
@@ -133,7 +147,7 @@
     }
 
     &--achievements {
-      padding: 35px 60px;
+      padding: 44px 60px;
       padding-bottom: 60px;
 
       & .form-group__wrapper {
@@ -162,6 +176,7 @@
   &--private,
   &--contacts {
     & .form-group__text {
+      margin-left: 21px;
       margin-bottom: 7px;
     }
   }
@@ -177,7 +192,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: -47px;
+      left: -45px;
       transform: translateY(-50%);
       width: 22px;
       height: 16px;
@@ -187,9 +202,10 @@
   }
 
   &--app {
-    margin-left: 70px;
+    margin-left: 69px;
 
     & .form-group__text--pick::before {
+      left: -69px;
       border-radius: 50%;
     }
 
@@ -199,7 +215,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: -43px;
+      left: -57px;
       transform: translateY(-50%);
       width: 15px;
       height: 15px;
@@ -209,14 +225,25 @@
   }
 
   @media (min-width: $tablet-width) {
+    &--app {
+      margin-left: 70px;
+      width: auto;
+    }
+
+    &--achievements {
+      margin-left: 67px;
+
+      & .form-group__input-achievements:checked + .form-group__text--pick::after {
+        left: -44px;
+      }
+    }
+
     &--private {
       display: flex;
       align-items: center;
 
       & .form-group__text {
-        margin: 0;
         margin-right: 20px;
-        vertical-align: middle;
       }
     }
 
@@ -231,6 +258,7 @@
 
       & .form-group__text {
         margin: 0;
+        padding-left: 20px;
       }
 
       // Иконки контакты
@@ -256,6 +284,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--app {
+      margin-left: 133px;
+    }
+
     &--contacts {
       margin: 0;
       width: 315px;
@@ -283,10 +315,6 @@
     width: auto;
     transform: none;
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 4px 31px;
-  }
 }
 
 .form-group__text {
@@ -307,7 +335,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: -55px;
+      left: -54px;
       transform: translateY(-50%);
       width: 39px;
       height: 39px;
@@ -322,6 +350,18 @@
 
     &:active::before {
       border-color: $pink;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    .form-group--achievements .form__text--pick::before {
+      left: -58px;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    .form-group--achievements .form__text--pick::before {
+      left: -54px;
     }
   }
 }
@@ -388,6 +428,10 @@
     margin: 0;
     width: 100%;
     min-height: 189px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 124px;
   }
 }
 

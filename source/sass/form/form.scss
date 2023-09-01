@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     column-gap: 74px;
-    row-gap: 70px;
+    row-gap: 53px;
     margin: 0 auto;
     width: 620px;
   }
@@ -16,6 +16,18 @@
   }
 }
 
+.form__hero .lead {
+  margin-bottom: 43px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
+}
+
 .form__button-wrapper {
   order: 6;
 
@@ -23,7 +35,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 17px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 }
 
@@ -44,8 +61,12 @@
   color: $pink;
 }
 
-.form__text {
+.form__hidetext {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .form__button {

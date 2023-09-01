@@ -8,6 +8,10 @@
     padding-top: 91px;
     padding-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .form-content__subtitle {
@@ -19,12 +23,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
-    width: 480px;
+    width: 490px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 66px;
     width: 760px;
   }
 }

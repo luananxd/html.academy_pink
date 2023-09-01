@@ -1,6 +1,10 @@
 .correction {
   background-color: $white;
   color: $dark-blue-desaturarion;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .correction__title {
@@ -11,7 +15,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     width: 450px;
     font-size: 18px;
   }
@@ -108,6 +112,10 @@
   color: $dark-blue-desaturarion;
   opacity: 0.3;
 
+  &--contrast .correction__icon {
+    left: 15px;
+  }
+
   &:hover {
     opacity: 0.5;
   }
@@ -187,6 +195,7 @@
 
     &--contrast:before {
       background-image: url("../img/catalog/correction/contrast.svg");
+      background-size: 32px 32px;
     }
 
     // Линия под настройками
@@ -202,6 +211,12 @@
     }
   }
 
+  @media(min-width: $tablet-width) {
+    &--contrast:before {
+      background-size: 16px 16px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 92px;
     width: 288px;
@@ -211,6 +226,10 @@
       width: 48px;
       height: 44px;
       background-size: 100% 100%;
+    }
+
+    &--contrast:before {
+      background-size: 32px 32px;
     }
 
     &:after {
@@ -235,6 +254,20 @@
   &:hover,
   &:active {
     background-color: $pink;
+  }
+
+  @media(min-width: $tablet-width) {
+    .correction__line--size & {
+      left: 79.2%;
+    }
+
+    .correction__line--tint & {
+      left: 12.4%;
+    }
+
+    .correction__line--contrast & {
+      left: 47.5%;
+    }
   }
 }
 

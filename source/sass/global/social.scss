@@ -5,9 +5,13 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: auto;
+  }
+
   @media (min-width: $desktop-width) {
     column-gap: 5px;
-    margin-right: auto;
   }
 }
 

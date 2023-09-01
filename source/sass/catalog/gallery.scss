@@ -38,6 +38,14 @@
 .gallery__item {
   display: flex;
   flex-direction: column;
+
+  @media(min-width: $tablet-width) {
+    min-height: 455px;
+  }
+
+  @media(min-width: $desktop-width) {
+    min-height: 555px;
+  }
 }
 
 .gallery__image-wrapper {
@@ -70,5 +78,5 @@
 }
 
 .gallery__comment .comment__text {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
