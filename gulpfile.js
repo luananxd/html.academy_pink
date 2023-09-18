@@ -81,7 +81,7 @@ export const sprite = () => {
 
 export const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(webp())
+    .pipe(webp({quality: 90}))
     .pipe(gulp.dest('build/img'))
 }
 
